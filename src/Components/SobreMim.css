@@ -1,0 +1,42 @@
+.SobreMimContainer{
+    @apply flex flex-col justify-center items-center w-[100%] h-[100%];
+}
+
+
+.SobreMimContent{ @apply bg-[#212121] text-white w-[80%] h-[40%] flex justify-center items-center space-x-[10%] flex-wrap
+    sm:flex sm:flex-row sm:justify-center sm:items-center sm:w-[90%] sm:h-[80%] sm:space-x-7 sm:space-y-10 sm:mt-5;
+
+}
+
+.SobreMimLeft{
+    @apply w-[35em] h-[70%] flex flex-col;
+}
+
+.SobreMimRight{
+    @apply w-[30em] h-[70%] flex flex-col flex items-center justify-center mt-10 ;
+}
+
+.Tittle-About{
+    @apply text-2xl text-left mt-14 text-[#4C70EF] font-semibold tracking-[3px];
+}
+
+.Tittle-Apresentation{
+    @apply text-5xl text-left mt-14;
+}
+
+.About{
+    @apply text-left mt-14 text-2xl text-[#B0ADAD];
+}
+.AboutEmail{
+    @apply mt-10 text-white bg-[#B0ADAD] w-[20em] h-[3em] text-lg text-center rounded-[10px]
+    ;
+}
+.AboutEmail:hover{
+    @apply bg-gray-400;
+}
+
+.MyPhoto{
+    @apply w-[23em] h-[23em] rounded-full border-white mr-16
+    ;
+}
+

@@ -1,0 +1,4 @@
+.Footer{
+    @apply flex flex-col items-center justify-center text-white w-full mt-[20em] h-24 bg-[#292C36]
+    text-white font-semibold text-lg tracking-[2px];
+}

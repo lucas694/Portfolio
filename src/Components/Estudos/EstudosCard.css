@@ -1,0 +1,22 @@
+.EstudosCard{
+    @apply flex flex-wrap bg-[#292C36] w-[23em] h-[9em] rounded-2xl
+}
+
+.IconDiv{
+    @apply w-[3.5em] h-[3.5em] bg-[#38405A] rounded-[5px] flex items-center justify-center mt-5 ml-7;
+}
+.EstudosCardTittleDiv{
+    @apply ml-5 mt-4 flex flex-col justify-start items-start;
+}
+
+.EstudosCardTittle{
+    @apply text-white text-xl font-semibold tracking-[1px] ;
+}
+
+.EstudosCardTextDiv{
+    @apply ml-7 w-[20em] h-[2em] flex justify-start;
+}
+
+.EstudosCardText{
+    @apply text-[#B0ADAD] text-sm font-semibold tracking-[1px] pb-8 ;
+}

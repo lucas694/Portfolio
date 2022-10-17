@@ -1,0 +1,22 @@
+.InicioContainer{
+    @apply h-[85vh] w-[100%] flex flex-col justify-center items-center
+}
+
+.InicioCenter{
+    @apply bg-transparent w-[90%] h-[50%] text-white mt-80
+}
+
+.ApresText{
+    @apply text-8xl text-center font-medium
+}
+
+.ApresText-2{
+    @apply text-2xl text-center font-semibold mt-11
+}
+.InicioIcons{
+    @apply flex justify-center items-center mt-10 space-x-7
+}
+
+.IconClass{
+    @apply h-[2.8em] w-[2.8em]  rounded-[50px]
+}

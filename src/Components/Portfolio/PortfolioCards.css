@@ -1,0 +1,39 @@
+.PortfolioCards-Container{
+    @apply flex flex-col flex-wrap justify-center bg-[#292C36] w-96 h-[26.8em] rounded-2xl
+    mt-5;
+}
+
+.Card-Image{
+    @apply w-full h-[18.5em] rounded-t-2xl bg-white;
+}
+
+.Card-Desc{
+    @apply flex flex-col w-full h-[8.3em] bg-[#292C36] rounded-2xl items-start
+    tracking-[2px];
+}
+
+.Card-Descricao{
+    @apply ml-8 mt-4 text-white font-semibold text-2xl;
+}
+
+.Card-Button{
+    @apply bg-[#558FFF] w-[8em] h-[2.6em] rounded-[8px] text-white text-center text-lg
+    font-semibold tracking-[1px] duration-200 ml-8 mt-4	;
+}
+
+.Card-Button:hover{
+    @apply bg-[#4C70EF] tracking-[2px] w-[8.2em] h-[2.7em] ;
+}
+
+.ImgCard{
+    @apply w-full h-full rounded-t-2xl;
+}
+
+.ModalStyle{
+    @apply flex flex-col justify-center bg-white w-[95%] h-[90%] rounded-2xl
+    mt-[3em] ml-auto mr-auto;
+}
+
+.FrameClass{
+    @apply w-[100%] h-[100%] rounded-2xl;
+}

@@ -1,0 +1,22 @@
+.PortfolioContainer{
+    @apply lg:flex lg:flex-col lg:items-center text-white lg:w-full lg:h-2/5 lg:mt-20
+}
+.PortfolioText{
+    @apply flex flex-col items-center justify-center;
+}
+
+.PortfolioTittle{
+    @apply text-2xl text-left mt-14 text-[#4C70EF] font-semibold tracking-[3px];
+}
+
+.LastProject{
+    @apply text-4xl text-left mt-5 font-semibold tracking-widest;
+}
+
+.PortfolioCardsContainer{
+    @apply space-x-0 flex flex-row justify-center mt-20 w-[100%] flex-wrap
+    md:flex md:flex-row md:justify-center md:mt-20 md:space-x-10 md:flex-wrap
+
+    ;
+
+}
