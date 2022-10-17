@@ -3,11 +3,13 @@
 }
 
 .InicioCenter{
-    @apply bg-transparent w-[90%] h-[50%] text-white mt-80
+    @apply sm:bg-transparent sm:w-[90%] sm:h-[50%] sm:text-white sm:mt-80
+    bg-transparent w-[90%] h-[50%] text-white mt-40
 }
 
 .ApresText{
-    @apply text-8xl text-center font-medium
+    @apply sm:text-8xl sm:text-center sm:font-medium
+    text-7xl text-center font-medium
 }
 
 .ApresText-2{
