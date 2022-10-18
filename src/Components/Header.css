@@ -1,7 +1,29 @@
+.NavMobileIcon{
+    @apply h-[30px] w-[30px] cursor-pointer
+    sm:hidden
+}
+
+.NavbarMobile{
+    @apply flex flex-col items-center justify-center bg-[#292C36] text-white
+    w-[45%] rounded-xl mt-48 fixed right-0;
+}
+.NavbarMobile a{
+     @apply w-full py-1 px-1 rounded-lg
+}
+.NavbarMobile a:hover{
+    @apply bg-[#38405A] text-white text-xl
+}
+.NavOpen{
+    @apply flex
+}
+.NavClose{
+    @apply hidden
+}
+
 
 .HeaderContent{
     @apply w-full h-24 flex flex-row justify-between items-center fixed
-    text-white ;
+    text-white flex-wrap;
 }
 
 .HeaderLogo{
@@ -14,7 +36,7 @@
 }
 
 .HeaderMenu{
-    @apply w-2/4 h-full flex flex-row justify-end  h-full mr-[1em]
+    @apply w-2/4 h-full flex flex-row justify-end  h-full mr-[1em] items-center
     xl:w-2/4 xl:h-full xl:flex xl:flex-row xl:justify-end  xl:h-full xl:mr-[15em]
     lg:w-2/4 lg:h-full lg:flex lg:flex-row lg:justify-end  lg:h-full lg:mr-[3em]
     md:w-2/4 md:h-full md:flex md:flex-row md:justify-end  md:h-full md:mr-[3em]
@@ -23,11 +45,11 @@
 }
 
 ul{
-    @apply flex flex-row  items-center space-x-3
+    @apply flex-row  items-center space-x-0 hidden
     xl:space-x-14
     lg:space-x-7
     md:space-x-5
-    sm:space-x-3
+    sm:space-x-3 sm:flex
 
 }
 li{
