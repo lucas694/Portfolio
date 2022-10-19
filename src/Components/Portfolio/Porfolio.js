@@ -35,7 +35,7 @@ const Portfolio = () => {
 
       <motion.div variants={item} className="PortfolioCardsContainer">
         <PortfolioCards CardImage={fast} CardDesc={"Projeto Fast Food"}
-                        Site={"https://delivery-kwyjmhszn-lucas694.vercel.app/"}/>
+                        Site={"https://delivery-orpin-sigma.vercel.app"}/>
 
         <PortfolioCards CardImage={Calc} CardDesc={"Calculadora React"}
                         Site={""}/>
