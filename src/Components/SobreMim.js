@@ -18,6 +18,8 @@ const item = {
 }
 // animação de Reload da página
 
+
+
 const SobreMim = () => {
 
   return (
@@ -45,9 +47,11 @@ const SobreMim = () => {
           </h3>
         </div>
 
-        <div className="SobreMimRight">
+        <motion.div className="SobreMimRight"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}>
           <img src={Me} alt="Me" className={"MyPhoto"}/>
-        </div>
+        </motion.div>
 
       </motion.div>
 

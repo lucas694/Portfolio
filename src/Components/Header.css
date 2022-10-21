@@ -4,8 +4,8 @@
 }
 
 .NavbarMobile{
-    @apply flex flex-col items-center justify-center bg-[#292C36] text-white
-    w-[45%] rounded-xl mt-48 fixed right-0;
+    @apply flex flex-col items-center justify-center bg-[#292c36f8] text-white
+    w-[45%] rounded-xl mt-48 fixed right-0 ;
 }
 .NavbarMobile a{
      @apply w-full py-1 px-1 rounded-lg
@@ -23,7 +23,7 @@
 
 .HeaderContent{
     @apply w-full h-24 flex flex-row justify-between items-center fixed
-    text-white flex-wrap;
+    text-white flex-wrap ;
 }
 
 .HeaderLogo{

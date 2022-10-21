@@ -5,12 +5,13 @@
   display: flex;
     flex-direction: column;
     justify-content: space-between;
-;
+  scroll-behavior: smooth;
 }
 
-body{
-  scroll-behavior: inherit;
+html {
+  @apply scroll-smooth;
 }
+
 /* styles fonts */
 
 .Tittle-About{
