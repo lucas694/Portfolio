@@ -3,7 +3,7 @@
 }
 
 .Footer1{
-    @apply flex flex-row items-center border-t border-[#292C36]
+    @apply flex flex-row items-center justify-center border-t border-[#292C36]
     w-[80%] h-[6em] mt-20 text-white font-semibold text-lg tracking-[2px];
 }
 

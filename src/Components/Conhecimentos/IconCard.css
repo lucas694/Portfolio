@@ -1,5 +1,5 @@
 .IconBox{
-    @apply w-[6.5em] h-[8.5em]  flex items-center justify-center
+    @apply w-[6.2em] h-[8.5em]  flex items-center justify-center
      mx-3 my-10 border-[#212121]
     sm:w-[8em] sm:h-[9em]
 }

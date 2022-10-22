@@ -6,7 +6,7 @@
 }
 
 .ConhecimentosContent{
-    @apply  flex-col items-center justify-center w-[100%] space-x-0 flex
+    @apply  flex-col items-center justify-center w-[95%] space-x-0 flex
     lg:flex lg:flex-row lg:w-[80%] lg:flex-wrap lg:justify-end lg:space-x-20 lg:items-start
     md:flex-col md:items-center md:justify-center md:w-[80%] md:space-x-0
     sm:flex-col sm:items-center sm:justify-center sm:w-[100%] sm:space-x-0
@@ -25,14 +25,14 @@
 }
 .Info{
     @apply text-[#B0ADAD] mt-16 w-[95%]  flex items-start
-    text-lg font-semibold text-start absolute
+    text-lg font-semibold text-start
     lg:w-[80%] lg:relative lg:mt-7 lg:flex lg:items-start
     md:w-[60%]
     sm:absolute mt-16;
 }
 
 .ConhecimentosCards{
-    @apply flex flex-row items-center justify-start flex-wrap w-[100%] mt-80
+    @apply flex flex-row items-center justify-start flex-wrap w-[100%] mt-20
     2xl:w-[45em]
     lg:flex lg:flex-row lg:items-center lg:justify-start lg:flex-wrap lg:w-[50%] lg:mt-0
     md:w-[100%] md:mt-80
