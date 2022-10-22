@@ -3,7 +3,7 @@
 }
 
 
-.SobreMimContent{ @apply bg-[#212121] text-white w-[80%] h-[40%] flex justify-center items-center space-x-[10%] flex-wrap
+.SobreMimContent{ @apply text-white w-[80%] h-[40%] flex justify-center items-center space-x-[10%] flex-wrap
     sm:flex sm:flex-row sm:justify-center sm:items-center sm:w-[90%] sm:h-[80%] sm:space-x-7 sm:space-y-10 sm:mt-5;
 
 }
@@ -36,11 +36,12 @@
     @apply text-left mt-14 text-2xl text-[#B0ADAD];
 }
 .AboutEmail{
-    @apply mt-10 text-white bg-[#B0ADAD] w-[20em] h-[3em] text-lg text-center rounded-[10px]
+    @apply mt-10 text-white bg-[#B0ADAD] w-[20em] h-[3em] text-lg text-center rounded-[10px] flex
+    justify-center items-center
     ;
 }
 .AboutEmail:hover{
-    @apply bg-gray-400;
+    @apply bg-gray-400 ;
 }
 
 

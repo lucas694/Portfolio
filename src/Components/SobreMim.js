@@ -2,6 +2,7 @@ import "./SobreMim.css"
 import Me from "../assets/img/me/Me2bp.png";
 import { motion } from "framer-motion"
 
+
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -38,11 +39,11 @@ const SobreMim = () => {
             Sou um apaixonado por tecnologia que decidiu trilhar o caminho da programação.
             Possuo experiência em Desenvolvimento Web.
 
-          <p className={"mt-5"}>Atualmente estou estudando e me aperfeiçoando em ReactJS, JavaScript, TailWind, HTML, CSS, Bootstrap, Git, GitHub. </p>
+          <p className={"mt-5"}>Atualmente estou estudando e me aperfeiçoando em ReactJS, JavaScript, TailWind, HTML, CSS, Bootstrap, Git. </p>
 
-          <button className="AboutEmail">
+          <p className="AboutEmail">
               lucasassuncao694@gmail.com
-          </button>
+          </p>
 
           </h3>
         </div>
