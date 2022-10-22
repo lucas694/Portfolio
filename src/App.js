@@ -5,6 +5,7 @@ import SobreMim from "./Components/SobreMim";
 import Porfolio from "./Components/Portfolio/Porfolio";
 import Estudos from "./Components/Estudos/Estudos";
 import Footer from "./Components/Footer";
+import Conhecimentos from "./Components/Conhecimentos/Conhecimentos";
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <SobreMim />
         <Estudos />
         <Porfolio/>
+        <Conhecimentos/>
         <Footer />
     </div>
   );

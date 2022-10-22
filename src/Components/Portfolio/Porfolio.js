@@ -2,6 +2,7 @@ import "./Portfolio.css"
 import PortfolioCards from "./PortfolioCards";
 import Calc from "../../assets/img/Portfolio/calculadora.png"
 import fast from "../../assets/img/Portfolio/fastfood.png"
+import Login from "../../assets/img/Portfolio/Login.png"
 import { motion } from "framer-motion"
 
 const container = {
@@ -37,7 +38,7 @@ const Portfolio = () => {
         <PortfolioCards CardImage={fast} CardDesc={"Projeto Fast Food"}
                         Site={"https://delivery-orpin-sigma.vercel.app"}/>
 
-        <PortfolioCards CardImage={Calc} CardDesc={"Tela de Login"}
+        <PortfolioCards CardImage={Login} CardDesc={"Tela de Login"}
                         Site={"https://login-screen-ten.vercel.app"}/>
         <PortfolioCards CardImage={Calc} CardDesc={"Em Breve"}
                         Site={""}/>

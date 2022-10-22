@@ -37,7 +37,7 @@ const Inicio = () => {
                 <div className="InicioIcons">
                   <a href={"https://github.com/lucas694"}><FaGithub className={"IconClass"}/></a>
                   <a href={"https://www.instagram.com/luccas_cardoso_/"}><FaInstagram className={"IconClass"} /></a>
-                  <a href={"https://www.linkedin.com/in/lucascardoso-assuncao/"}><FaLinkedinIn className={"h-[2.8em] w-[2.8em]"}/></a>
+                  <a href={"https://www.linkedin.com/in/lucascardoso-assuncao/"}><FaLinkedinIn className={"IconClassLinkdin"}/></a>
 
                 </div>
 

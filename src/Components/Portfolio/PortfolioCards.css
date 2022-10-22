@@ -18,7 +18,7 @@
 
 .Card-Button{
     @apply bg-[#558FFF] w-[8em] h-[2.6em] rounded-[8px] text-white text-center text-lg
-    font-semibold tracking-[1px] duration-200 ml-8 mt-4	;
+    font-semibold tracking-[1px] duration-200 ml-8 mt-4	shadow-lg shadow-blue-500/50;
 }
 
 .Card-Button:hover{

@@ -20,5 +20,12 @@
 }
 
 .IconClass{
-    @apply h-[2.8em] w-[2.8em]  rounded-[50px]
+    @apply h-[2.8em] w-[2.8em] rounded-[50px]
+}
+.IconClassLinkdin{
+    @apply h-[2.8em] w-[2.8em]
+}
+
+.IconClass:hover, .IconClassLinkdin:hover{
+    @apply transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
 }

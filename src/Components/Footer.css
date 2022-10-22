@@ -1,4 +1,13 @@
-.Footer{
-    @apply flex flex-col items-center justify-center text-white w-full mt-[20em] h-24 bg-[#292C36]
-    text-white font-semibold text-lg tracking-[2px];
+.FooterContainer{
+    @apply flex flex-row items-center justify-center;
 }
+
+.Footer1{
+    @apply flex flex-row items-center border-t border-[#292C36]
+    w-[80%] h-[6em] mt-20 text-white font-semibold text-lg tracking-[2px];
+}
+
+.CopyF{
+    @apply ml-4 flex justify-start;
+}
+

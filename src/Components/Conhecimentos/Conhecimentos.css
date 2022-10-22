@@ -1,0 +1,63 @@
+.ConhecimentosContainer{
+    @apply flex-col items-center justify-center mt-40 w-full flex
+    lg:flex lg:flex-row lg:items-center lg:justify-center lg:mt-40 lg:w-full
+    md:flex-col md:items-center md:justify-center md:mt-40 md:w-full
+    sm:flex-col sm:items-center sm:justify-center sm:mt-40 sm:w-full
+}
+
+.ConhecimentosContent{
+    @apply  flex-col items-center justify-center w-[100%] space-x-0 flex
+    lg:flex lg:flex-row lg:w-[80%] lg:flex-wrap lg:justify-end lg:space-x-20 lg:items-start
+    md:flex-col md:items-center md:justify-center md:w-[80%] md:space-x-0
+    sm:flex-col sm:items-center sm:justify-center sm:w-[100%] sm:space-x-0
+}
+
+.ConhecimentoInfo{
+    @apply flex flex-col w-[95%] items-start flex-wrap justify-start
+    lg:w-[40%] lg:mt-10 lg:flex lg:flex-col lg:items-start lg:flex-wrap lg:justify-start
+    md:w-[80%]
+    sm:w-[80%]
+
+}
+
+.ConhecimentoInfo h1{
+    @apply text-3xl font-bold text-[#fff] mt-2 ;
+}
+.Info{
+    @apply text-[#B0ADAD] mt-16 w-[95%]  flex items-start
+    text-lg font-semibold text-start absolute
+    lg:w-[80%] lg:relative lg:mt-7 lg:flex lg:items-start
+    md:w-[60%]
+    sm:absolute mt-16;
+}
+
+.ConhecimentosCards{
+    @apply flex flex-row items-center justify-start flex-wrap w-[100%] mt-80
+    2xl:w-[45em]
+    lg:flex lg:flex-row lg:items-center lg:justify-start lg:flex-wrap lg:w-[50%] lg:mt-0
+    md:w-[100%] md:mt-80
+    sm:w-[90%] sm:mt-64 sm:justify-start
+    ;
+}
+
+.ContainerCards{
+    @apply flex flex-col
+}
+
+
+.SpanBox{
+    @apply w-[7em] flex items-center justify-center ml-3 text-white
+    font-semibold text-lg text-[#B0ADAD] absolute hidden
+}
+
+.ContainerCards:hover .SpanBox{
+    @apply block
+}
+
+{/* Easter Egg */}
+
+.SpanBoxRebel{
+    @apply w-[7em] flex items-center justify-center ml-3 text-white
+    font-semibold text-lg text-[#B0ADAD] absolute
+}
+

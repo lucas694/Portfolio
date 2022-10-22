@@ -34,7 +34,7 @@ const Header = ()=>{
               <li><a href="#Inicio">Inicio</a></li>
               <li><a href="#SobreMim">Sobre Mim</a></li>
               <li><a href="#Projetos">Projetos</a></li>
-              <li><a href="#Contato">Contato</a></li>
+              <li><a href="#Conhecimentos">Conhecimentos</a></li>
             </ul>
         </div>
 
@@ -47,7 +47,7 @@ const Header = ()=>{
           <a href="#Inicio">Inicio</a>
           <a href="#SobreMim">Sobre Mim</a>
           <a href="#Projetos">Projetos</a>
-          <a href="#Contato">Contato</a>
+          <a href="#Conhecimentos">Conhecimentos</a>
         </motion.div>
       </div>
   )
