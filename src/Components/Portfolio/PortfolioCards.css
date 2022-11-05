@@ -26,7 +26,7 @@
 }
 
 .ImgCard{
-    @apply w-full h-full rounded-t-2xl;
+    @apply w-full h-full rounded-t-2xl object-cover
 }
 
 .ModalStyle{

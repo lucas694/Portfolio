@@ -50,7 +50,14 @@ const SobreMim = () => {
 
         <motion.div className="SobreMimRight"
                     whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}>
+                    whileTap={{ scale: 0.9 }}
+                    drag
+                    dragConstraints={{
+                      top: -50,
+                      left: -50,
+                      right: 50,
+                      bottom: 50,
+                    }}>       {/*Animações*/}
           <img src={Me} alt="Me" className={"MyPhoto"}/>
         </motion.div>
 

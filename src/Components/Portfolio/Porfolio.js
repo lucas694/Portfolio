@@ -3,6 +3,7 @@ import PortfolioCards from "./PortfolioCards";
 import Calc from "../../assets/img/Portfolio/calculadora.png"
 import fast from "../../assets/img/Portfolio/fastfood.png"
 import Login from "../../assets/img/Portfolio/Login.png"
+import RnM from  "../../assets/img/Portfolio/RicknMorty.webp"
 import { motion } from "framer-motion"
 
 const container = {
@@ -40,8 +41,8 @@ const Portfolio = () => {
 
         <PortfolioCards CardImage={Login} CardDesc={"Tela de Login"}
                         Site={"https://login-screen-ten.vercel.app"}/>
-        <PortfolioCards CardImage={Calc} CardDesc={"Em Breve"}
-                        Site={""}/>
+        <PortfolioCards CardImage={RnM} CardDesc={"Rick and Morty API"}
+                        Site={"https://rick-and-morty-six-khaki.vercel.app"}/>
       </motion.div>
 
     </motion.div>

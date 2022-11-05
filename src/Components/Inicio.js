@@ -35,9 +35,9 @@ const Inicio = () => {
 
                 {/* Redes Sociais Icons */}
                 <div className="InicioIcons">
-                  <a href={"https://github.com/lucas694"}><FaGithub className={"IconClass"}/></a>
-                  <a href={"https://www.instagram.com/luccas_cardoso_/"}><FaInstagram className={"IconClass"} /></a>
-                  <a href={"https://www.linkedin.com/in/lucascardoso-assuncao/"}><FaLinkedinIn className={"IconClassLinkdin"}/></a>
+                  <a href={"https://github.com/lucas694"} target="_blank"><FaGithub className={"IconClass"}/></a>
+                  <a href={"https://www.instagram.com/luccas_cardoso_/"} target="_blank"><FaInstagram className={"IconClass"} /></a>
+                  <a href={"https://www.linkedin.com/in/lucascardoso-assuncao/"} target="_blank"><FaLinkedinIn className={"IconClassLinkdin"}/></a>
 
                 </div>
 
