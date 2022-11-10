@@ -15,7 +15,7 @@
 
 .PortfolioCardsContainer{
     @apply space-x-0 flex flex-row justify-center mt-20 w-[100%] flex-wrap
-    md:flex md:flex-row md:justify-center md:mt-20 md:space-x-10 md:flex-wrap
+    md:flex md:flex-row md:justify-center md:mt-20 md:space-x-2 md:flex-wrap
 
     ;
 

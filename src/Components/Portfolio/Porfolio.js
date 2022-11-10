@@ -4,6 +4,7 @@ import Calc from "../../assets/img/Portfolio/calculadora.png"
 import fast from "../../assets/img/Portfolio/fastfood.png"
 import Login from "../../assets/img/Portfolio/Login.png"
 import RnM from  "../../assets/img/Portfolio/RicknMorty.webp"
+import Nft from  "../../assets/img/Portfolio/Nft.png"
 import { motion } from "framer-motion"
 
 const container = {
@@ -24,6 +25,12 @@ const item = {
 
 
 const Portfolio = () => {
+  const Projetos =[
+    {id:1 , tittle:"Projeto Fast Food", img:fast, link:"https://delivery-orpin-sigma.vercel.app"},
+    {id:2 , tittle:"Tela de Login", img:Login, link:"https://login-screen-ten.vercel.app"},
+    {id:3 , tittle:"Rick and Morty API", img:RnM, link:"https://rick-and-morty-six-khaki.vercel.app"},
+    {id:4 , tittle:"Ladding Page NFT", img:Nft, link:"https://ladding-page-nft.vercel.app"},
+  ]
   return (
     <motion.div className="PortfolioContainer" id={"Projetos"}
                 variants={container}
@@ -34,15 +41,10 @@ const Portfolio = () => {
         <h1 className={"PortfolioTittle"}>PORTFOLIO</h1>
         <h1 className={"LastProject"}>ULTIMOS PROJETOS</h1>
       </motion.div>
-
       <motion.div variants={item} className="PortfolioCardsContainer">
-        <PortfolioCards CardImage={fast} CardDesc={"Projeto Fast Food"}
-                        Site={"https://delivery-orpin-sigma.vercel.app"}/>
-
-        <PortfolioCards CardImage={Login} CardDesc={"Tela de Login"}
-                        Site={"https://login-screen-ten.vercel.app"}/>
-        <PortfolioCards CardImage={RnM} CardDesc={"Rick and Morty API"}
-                        Site={"https://rick-and-morty-six-khaki.vercel.app"}/>
+        {Projetos.map((item)=>
+          <PortfolioCards key={item.id} CardDesc={item.tittle} CardImage={item.img} Site={item.link}/>
+        )}
       </motion.div>
 
     </motion.div>

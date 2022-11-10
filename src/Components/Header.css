@@ -4,8 +4,8 @@
 }
 
 .NavbarMobile{
-    @apply flex flex-col items-center justify-center bg-[#292c36f8] text-white
-    w-[100%] rounded-xl mt-48 fixed right-0 ;
+    @apply flex flex-col items-center justify-center text-white backdrop-blur-sm
+    w-[100%] rounded-xl mt-56 fixed right-0;
 }
 .NavbarMobile a{
      @apply w-full py-1 px-1 rounded-lg
@@ -15,6 +15,7 @@
 }
 .NavOpen{
     @apply flex
+    sm:hidden
 }
 .NavClose{
     @apply hidden
