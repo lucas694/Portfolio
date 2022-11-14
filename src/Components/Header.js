@@ -17,10 +17,9 @@ const Header = ()=>{
   const [isOpen, setIsOpen] = useState(false);
   const OpenNav = () => setIsOpen(!isOpen);
 
-
   return(
-      <div className="HeaderContent">
 
+      <div className="HeaderContent">
         <div className="HeaderLogo">
           <img src={Dath} alt="Logo" className='LogoH'/>
           <motion.h1 style={{ rotate }}>Lucas</motion.h1>
