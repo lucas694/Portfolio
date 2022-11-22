@@ -1,10 +1,10 @@
 .PortfolioCards-Container{
     @apply flex flex-col flex-wrap justify-center bg-[#292C36] w-96 h-[26.8em] rounded-2xl
-    mt-5 md:ml-8
+    mt-5 md:ml-0
 }
 
 .Card-Image{
-    @apply w-full h-[18.5em] rounded-t-2xl bg-white;
+    @apply w-full h-[18.5em] rounded-t-2xl bg-white ;
 }
 
 .Card-Desc{

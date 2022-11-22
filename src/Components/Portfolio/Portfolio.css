@@ -14,7 +14,7 @@
 }
 
 .PortfolioCardsContainer{
-    @apply flex flex-row justify-center mt-20 w-full flex-wrap items-center
+    @apply flex flex-row justify-around mt-20 w-full flex-wrap items-center
     md:flex md:flex-row md:mt-20 md:flex-wrap
 
     ;
