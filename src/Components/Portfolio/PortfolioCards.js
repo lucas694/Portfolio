@@ -21,7 +21,7 @@ const PortfolioCards = (props) => {
   return (
     <div className="PortfolioCards-Container">
       <div className="Card-Image">
-        <img src={props.CardImage} alt="Calculadora" className={"ImgCard"}/>
+        <img src={props.CardImage} alt="" className={"ImgCard"}/>
       </div>
 
       <div className={"Card-Desc"}>

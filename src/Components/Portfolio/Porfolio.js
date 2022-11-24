@@ -6,6 +6,7 @@ import Login from "../../assets/img/Portfolio/Login.png"
 import RnM from  "../../assets/img/Portfolio/RicknMorty.webp"
 import Nft from  "../../assets/img/Portfolio/Nft.png"
 import Banking from  "../../assets/img/Portfolio/Banking.png"
+import CommingSoon from  "../../assets/img/Portfolio/Comming-Soon.png"
 import { motion } from "framer-motion"
 
 const container = {
@@ -32,6 +33,7 @@ const Portfolio = () => {
     {id:3 , tittle:"Rick and Morty API", img:RnM, link:"https://rick-and-morty-six-khaki.vercel.app"},
     {id:4 , tittle:"Ladding Page NFT", img:Nft, link:"https://ladding-page-nft.vercel.app"},
     {id:5 , tittle:"Banking Page", img:Banking, link:"https://bank-project-alpha.vercel.app"},
+    {id:6 , tittle:"Comming Soon", img:CommingSoon, link:"https://commig-soon-page.vercel.app"},
   ]
   return (
     <motion.div className="PortfolioContainer" id={"Projetos"}
