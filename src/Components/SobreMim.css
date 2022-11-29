@@ -36,12 +36,12 @@
     @apply text-left mt-14 text-2xl text-[#B0ADAD];
 }
 .AboutEmail{
-    @apply mt-10 text-white bg-[#B0ADAD] w-[20em] h-[3em] text-lg text-center rounded-[10px] flex
+    @apply mt-10 text-white border-2 border-dashed border-[#B0ADAD] w-[20em] h-[3em] text-lg text-center rounded-[10px] flex
     justify-center items-center
     ;
 }
 .AboutEmail:hover{
-    @apply bg-gray-400 ;
+    @apply border-gray-400 ;
 }
 
 
