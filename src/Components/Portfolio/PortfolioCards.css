@@ -11,6 +11,9 @@
     @apply flex flex-col w-full h-[8.3em] bg-[#292C36] rounded-2xl items-start
     tracking-[2px];
 }
+.CardBtnSec{
+    @apply flex flex-row items-center w-full
+}
 
 .Card-Descricao{
     @apply ml-8 mt-4 text-white font-semibold text-2xl;

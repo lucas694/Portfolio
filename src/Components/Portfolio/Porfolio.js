@@ -7,6 +7,7 @@ import RnM from  "../../assets/img/Portfolio/RicknMorty.webp"
 import Nft from  "../../assets/img/Portfolio/Nft.png"
 import Banking from  "../../assets/img/Portfolio/Banking.png"
 import CommingSoon from  "../../assets/img/Portfolio/Comming-Soon.png"
+import NftMarket from  "../../assets/img/Portfolio/NftMarket.png"
 import { motion } from "framer-motion"
 
 const container = {
@@ -28,12 +29,13 @@ const item = {
 
 const Portfolio = () => {
   const Projetos =[
-    {id:1 , tittle:"Projeto Fast Food", img:fast, link:"https://delivery-orpin-sigma.vercel.app"},
-    {id:2 , tittle:"Tela de Login", img:Login, link:"https://login-screen-ten.vercel.app"},
-    {id:3 , tittle:"Rick and Morty API", img:RnM, link:"https://rick-and-morty-six-khaki.vercel.app"},
-    {id:4 , tittle:"Ladding Page NFT", img:Nft, link:"https://ladding-page-nft.vercel.app"},
-    {id:5 , tittle:"Banking Page", img:Banking, link:"https://bank-project-alpha.vercel.app"},
-    {id:6 , tittle:"Comming Soon", img:CommingSoon, link:"https://commig-soon-page.vercel.app"},
+    {id:1 , tittle:"Projeto Fast Food", img:fast, link:"https://delivery-orpin-sigma.vercel.app",GitLink:"https://github.com/lucas694/Delevery-Project-React"},
+    {id:2 , tittle:"Tela de Login", img:Login, link:"https://login-screen-ten.vercel.app",GitLink:"https://github.com/lucas694/LoginScreen"},
+    {id:3 , tittle:"Rick and Morty API", img:RnM, link:"https://rick-and-morty-six-khaki.vercel.app",GitLink:"https://github.com/lucas694/Rick-and-Morty"},
+    {id:4 , tittle:"Ladding Page NFT", img:Nft, link:"https://ladding-page-nft.vercel.app",GitLink:"https://github.com/lucas694/Ladding-page-Nft"},
+    {id:5 , tittle:"Banking Page", img:Banking, link:"https://bank-project-alpha.vercel.app",GitLink:"https://github.com/lucas694/Bank-Project"},
+    {id:6 , tittle:"Comming Soon", img:CommingSoon, link:"https://commig-soon-page.vercel.app",GitLink:"https://github.com/lucas694/CommigSoonPage"},
+    {id:7 , tittle:"NFT Marketplace", img:NftMarket, link:"https://nft-marketplace-drab-six.vercel.app",GitLink:"https://github.com/lucas694/Nft-Marketplace"},
   ]
   return (
     <motion.div className="PortfolioContainer" id={"Projetos"}
@@ -47,7 +49,7 @@ const Portfolio = () => {
       </motion.div>
       <motion.div variants={item} className="PortfolioCardsContainer">
         {Projetos.map((item)=>
-          <PortfolioCards key={item.id} CardDesc={item.tittle} CardImage={item.img} Site={item.link}/>
+          <PortfolioCards key={item.id} CardDesc={item.tittle} CardImage={item.img} Site={item.link} GitLink={item.GitLink}/>
         )}
       </motion.div>
 
