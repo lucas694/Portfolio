@@ -41,7 +41,6 @@ const Inicio = () => {
 
                 </div>
 
-
               </motion.div>
           </div>
 

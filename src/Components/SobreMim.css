@@ -25,7 +25,7 @@
 }
 
 .Tittle-About{
-    @apply text-2xl text-left mt-14 text-[#4C70EF] font-semibold tracking-[3px];
+    @apply text-2xl mt-14 text-[#4C70EF] font-semibold tracking-[3px] text-left;
 }
 
 .Tittle-Apresentation{
@@ -36,9 +36,10 @@
     @apply text-left mt-14 text-2xl text-[#B0ADAD];
 }
 .AboutEmail{
-    @apply mt-10 text-white border-2 border-dashed border-[#B0ADAD] w-[20em] h-[3em] text-lg text-center rounded-[10px] flex
-    justify-center items-center
-    ;
+    @apply flex items-center w-full justify-center
+}
+.MyEmail{
+    @apply mt-10 text-white border-2 border-dashed border-[#B0ADAD] px-20 py-3 text-lg text-center rounded-[10px] cursor-pointer
 }
 .AboutEmail:hover{
     @apply border-gray-400 ;

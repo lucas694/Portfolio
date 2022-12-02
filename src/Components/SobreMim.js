@@ -43,9 +43,9 @@ const SobreMim = () => {
 
           <p className={"mt-5"}>Atualmente estou estudando e me aperfeiçoando em ReactJS, JavaScript, TailWind, HTML, CSS, Bootstrap, Git , API. </p>
 
-          <p className="AboutEmail">
-              lucasassuncao694@gmail.com
-          </p>
+          <div className="AboutEmail">
+            <a href="mailto:lucasassuncao694@gmail.com" className="MyEmail">lucasassuncao694@gmail.com</a>
+          </div>
 
           </h3>
         </div>

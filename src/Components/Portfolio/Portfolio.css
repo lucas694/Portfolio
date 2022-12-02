@@ -1,5 +1,5 @@
 .PortfolioContainer{
-    @apply flex flex-col items-center text-white w-full h-2/5 mt-20
+    @apply flex flex-col items-center text-white w-full h-2/5 mt-20 px-10
 }
 .PortfolioText{
     @apply flex flex-col items-center justify-center;
@@ -10,7 +10,7 @@
 }
 
 .LastProject{
-    @apply text-4xl text-left mt-5 font-semibold tracking-widest;
+    @apply text-4xl text-center mt-5 font-semibold tracking-widest;
 }
 
 .PortfolioCardsContainer{

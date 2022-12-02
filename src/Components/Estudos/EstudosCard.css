@@ -1,5 +1,5 @@
 .EstudosCard{
-    @apply flex flex-wrap bg-[#292C36] w-[23em] h-[9em] rounded-2xl
+    @apply flex flex-wrap bg-[#292C36] h-[9em] rounded-2xl
 }
 
 .IconDiv{
