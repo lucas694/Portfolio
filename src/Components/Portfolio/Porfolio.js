@@ -10,6 +10,7 @@ import CommingSoon from  "../../assets/img/Portfolio/Comming-Soon.png"
 import NftMarket from  "../../assets/img/Portfolio/NftMarket.png"
 import Gow from  "../../assets/img/Portfolio/Gow.png"
 import Porfolio from  "../../assets/img/Portfolio/Porfolio.png"
+import ValorantApp from  "../../assets/img/Portfolio/ValorantApp.png"
 import { motion } from "framer-motion"
 
 const container = {
@@ -39,7 +40,8 @@ const Portfolio = () => {
     {id:6 , tittle:"Banking Page", img:Banking, link:"https://bank-project-alpha.vercel.app",GitLink:"https://github.com/lucas694/Bank-Project"},
     {id:7 , tittle:"NFT Marketplace", img:NftMarket, link:"https://nft-marketplace-drab-six.vercel.app",GitLink:"https://github.com/lucas694/Nft-Marketplace"},
     {id:8 , tittle:"God of War Page", img:Gow, link:"https://gow-ruddy.vercel.app",GitLink:"https://github.com/lucas694/Gow"},
-    {id:9 , tittle:"Comming Soon", img:CommingSoon, link:"https://commig-soon-page.vercel.app",GitLink:"https://github.com/lucas694/CommigSoonPage"},
+    {id:9 , tittle:"Valorant App", img:ValorantApp, link:"https://valorant-mobile.vercel.app",GitLink:"https://github.com/lucas694/ValorantMobile"},
+    {id:10 , tittle:"Comming Soon", img:CommingSoon, link:"https://commig-soon-page.vercel.app",GitLink:"https://github.com/lucas694/CommigSoonPage"},
 
   ]
   return (
