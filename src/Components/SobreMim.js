@@ -41,7 +41,7 @@ const SobreMim = () => {
             Sou um apaixonado por tecnologia que decidiu trilhar o caminho da programação.
             Possuo experiência em Desenvolvimento Web.
 
-          <p className={"mt-5"}>Atualmente estou estudando e me aperfeiçoando em ReactJS, JavaScript, TailWind, HTML, CSS, Bootstrap, Git , API. </p>
+          <p className={"mt-5"}>Atualmente estou estudando e me aperfeiçoando em ReactJS, JavaScript, TailWind, HTML, CSS, Bootstrap, Git , API e Redux. </p>
 
           <div className="AboutEmail">
             <a href="mailto:lucasassuncao694@gmail.com" className="MyEmail">lucasassuncao694@gmail.com</a>

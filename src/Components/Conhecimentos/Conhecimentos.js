@@ -10,6 +10,8 @@ import { FaJsSquare } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { FaRebel } from "react-icons/fa";
+import { SiRedux } from "react-icons/si";
+
 
 
 const Conhecimentos = (props) => {
@@ -90,6 +92,16 @@ const Conhecimentos = (props) => {
             </div>
             <div className={"SpanBox "}>
               <span>GIT</span>
+            </div>
+          </div>
+
+          <div className={"ContainerCards"}>
+            <div onMouseEnter={() => setShowText("Redux é uma biblioteca JavaScript de código aberto para gerenciar o estado do aplicativo. Comumente usado com bibliotecas como React ou Angular para criar interfaces de usuário.")}
+                 onMouseLeave={() => setShowText("*passe o cursor do mouse no card para ler*")}>
+              <IconCard SVG={<SiRedux className={"Icon"}/> }/>
+            </div>
+            <div className={"SpanBox "}>
+              <span>Redux</span>
             </div>
           </div>
 
