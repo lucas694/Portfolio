@@ -95,16 +95,6 @@ const Conhecimentos = (props) => {
             </div>
           </div>
 
-          <div className={"ContainerCards"}>
-            <div onMouseEnter={() => setShowText("Redux é uma biblioteca JavaScript de código aberto para gerenciar o estado do aplicativo. Comumente usado com bibliotecas como React ou Angular para criar interfaces de usuário.")}
-                 onMouseLeave={() => setShowText("*passe o cursor do mouse no card para ler*")}>
-              <IconCard SVG={<SiRedux className={"Icon"}/> }/>
-            </div>
-            <div className={"SpanBox "}>
-              <span>Redux</span>
-            </div>
-          </div>
-
           <button className={"BtnRebel"} onClick={ShowRebel } >
             <div className={isOpen ? "SpanBoxRebel" : "IconRebelHidden"}>
               <span>REBELIÃO</span>
