@@ -18,18 +18,15 @@ const Header = ()=>{
   const OpenNav = () => setIsOpen(!isOpen);
 
   return(
-
       <div className="HeaderContent">
         <div className="HeaderLogo">
           <img src={Dath} alt="Logo" className='LogoH'/>
           <motion.h1 style={{ rotate }}>Lucas</motion.h1>
         </div>
-
         <div className="HeaderMenu">
           <button onClick={OpenNav}>
             <FaBars className={"NavMobileIcon"}/>
           </button>
-
             <ul>
               <li><a href="#Inicio">Inicio</a></li>
               <li><a href="#SobreMim">Sobre Mim</a></li>
@@ -37,10 +34,7 @@ const Header = ()=>{
               <li><a href="#Conhecimentos">Conhecimentos</a></li>
             </ul>
         </div>
-
         {/*Nav Mobile */}
-
-
         <motion.div className={`NavbarMobile ${isOpen ? "NavOpen" : "NavClose"}`}
                     animate={isOpen ? "open" : "closed"}
                     variants={variants}>
@@ -52,5 +46,4 @@ const Header = ()=>{
       </div>
   )
 }
-
 export default Header

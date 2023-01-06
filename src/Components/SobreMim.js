@@ -1,9 +1,16 @@
 import "./SobreMim.css"
-import Me from "../assets/img/me/Me2bp.png";
 import lucas from "../assets/img/me/lucas.jfif";
 
+//icons
+import HtmlIcon from "../assets/svg/html5-original.svg";
+import CssIcon from "../assets/svg/css3-original.svg";
+import JavaScriptIcon from "../assets/svg/javascript-original.svg";
+import ReactIcon from "../assets/svg/react-original.svg";
+import ReduxIcon from "../assets/svg/redux-original.svg";
+import GitIcon from "../assets/svg/git-original.svg";
+import BootstrapIcon from "../assets/svg/bootstrap-original.svg";
+import TailwindIcon from "../assets/svg/tailwindcss-plain.svg";
 import { motion } from "framer-motion"
-
 
 const container = {
   hidden: { opacity: 0 },
@@ -14,17 +21,23 @@ const container = {
     }
   }
 }
-
 const item = {
   hidden: { opacity: 0 },
   show: { opacity: 1 }
 }
 // animação de Reload da página
 
-
-
 const SobreMim = () => {
-
+  const languagesIcons = [
+    {id:1, icon: HtmlIcon, name: "HTML5"},
+    {id:2, icon: CssIcon, name: "CSS3"},
+    {id:3, icon: JavaScriptIcon, name: "JavaScript"},
+    {id:4, icon: ReactIcon, name: "React"},
+    {id:5, icon: ReduxIcon, name: "Redux"},
+    {id:6, icon: GitIcon, name: "Git"},
+    {id:7, icon: BootstrapIcon, name: "Bootstrap"},
+    {id:8, icon: TailwindIcon, name: "Tailwind"},
+  ]
   return (
     <motion.div className="SobreMimContainer" id={"SobreMim"}
                 variants={container}
@@ -35,19 +48,19 @@ const SobreMim = () => {
         <div className="SobreMimLeft">
           <p className={"Tittle-About"}>SOBRE MIM</p>
           <h3 className={"Tittle-Apresentation"}>Olá, Me chamo Lucas e Sou um Desenvolvedor Jr.</h3>
-
-          <h3 className={"About"}>
-
-            Sou um apaixonado por tecnologia que decidiu trilhar o caminho da programação.
-            Possuo experiência em Desenvolvimento Web.
-
-          <p className={"mt-5"}>Atualmente estou estudando e me aperfeiçoando em ReactJS, JavaScript, TailWind, HTML, CSS, Bootstrap, Git , API e Redux. </p>
-
-          <div className="AboutEmail">
-            <a href="mailto:lucasassuncao694@gmail.com" className="MyEmail">lucasassuncao694@gmail.com</a>
+          <div className={"About"}>
+            <p> Sou um apaixonado por tecnologia que decidiu trilhar o caminho da programação.
+            Possuo experiência em Desenvolvimento Web.</p>
+            <p className={"mt-5"}>Atualmente estou estudando e me aperfeiçoando em ReactJS, JavaScript, TailWind, HTML, CSS, Bootstrap, Git , API e Redux. </p>
+            <div className={"languageSec"}>
+              {languagesIcons.map((item) =>(
+                <img src={item.icon} className={"languageIcons"} alt={item.name} />
+              ))}
+            </div>
+            <div className="AboutEmail">
+              <a href="mailto:lucasassuncao694@gmail.com" className="MyEmail">lucasassuncao694@gmail.com</a>
+            </div>
           </div>
-
-          </h3>
         </div>
 
         <motion.div className="SobreMimRight"
@@ -62,10 +75,8 @@ const SobreMim = () => {
                     }}>       {/*Animações*/}
           <img src={lucas} alt="Me" className={"MyPhoto"}/>
         </motion.div>
-
       </motion.div>
-
     </motion.div>
   );
-}
+};
 export default SobreMim ;

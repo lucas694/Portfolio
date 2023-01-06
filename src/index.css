@@ -1,13 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 .Bgnd{
     background-image: url("./assets/img/bg-image1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-origin: content-box;
     background-position: center;
-
 }
+
 

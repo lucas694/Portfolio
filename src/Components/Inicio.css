@@ -8,6 +8,7 @@
 }
 
 .ApresText{
+    font-family: sans-serif;
     @apply sm:text-8xl sm:text-center sm:font-medium
     text-7xl text-center font-medium
 }

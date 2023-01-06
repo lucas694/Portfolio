@@ -1,6 +1,6 @@
 import "./Conhecimentos.css"
-import IconCard from "./IconCard";
 import {useState} from "react";
+import ConhecimentosCard from "./ConhecimentosCard";
 
 // Import SVGs
 import { FaCss3Alt } from "react-icons/fa";
@@ -12,21 +12,30 @@ import { FaGitAlt } from "react-icons/fa";
 import { FaRebel } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
 
-
-
 const Conhecimentos = (props) => {
-  {/* easter egg*/}
-  const[ isOpen, setIsOpen]  = useState(false)
+  const languages = [
+    {id:1,langName:"HTML", langIcon:<FaHtml5 className={"Icon"}/>, langDescription:"HTML é uma linguagem baseada em marcação, onde marcamos os elementos para definir quais informações a página vai exibir.",},
+    {id:2,langName:"CSS", langIcon:<FaCss3Alt className={"Icon"}/>, langDescription:"CSS é uma linguagem de estilo, onde definimos como os elementos da página vão se comportar.",},
+    {id:3,langName:"React", langIcon:<FaReact className={"Icon"}/>, langDescription:"ReactJS é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.",},
+    {id:4,langName:"JavaScript", langIcon:<FaJsSquare className={"Icon"}/>, langDescription:"JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.",},
+    {id:5,langName:"GIT", langIcon:<FaGitAlt className={"Icon"}/>, langDescription:"Git é um sistema de controle de versão distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.",},
+    {id:6,langName:"Tailwind CSS", langIcon:<SiTailwindcss className={"Icon"}/>, langDescription:"Tailwind CSS é um framework desenvolvido para maximizar o potencial do bom e velho CSS e levá-lo ainda mais longe.",},
+    {id:7,langName:"Redux Toolkit", langIcon:<SiRedux className={"Icon"}/>, langDescription:"Redux é uma biblioteca JavaScript de código aberto para gerenciar o estado do aplicativo. É comumente usado com bibliotecas como React ou Angular para criar interfaces de usuário.",},
+  ]
+
+  {/*easter egg*/}
+  const[ rebelIsOpen, setRebelIsOpen]  = useState(false)
   const[ShowText, setShowText] = useState("*passe o cursor do mouse no card para ler*")
 
   const ShowRebel = () =>{
-    setIsOpen(!isOpen)
-    setShowText(
-      <p> <p className={"font-bold text-3xl text-red-700 mb-6"}>Aliança Rebelde. </p>
-      A Aliança Rebelde luta bravamente contra o mal do Império Galáctico, sem nunca desanimar apesar de alguns reveses esmagadores. Formada a partir dos movimentos de resistência que surgem durante as Guerras Clônicas, a Rebelião trabalha em segredo por décadas para derrubar o Imperador e restaurar a democracia na galáxia.
-      <p className={"mt-4 text-white"}>Voce encontrou um Easter Egg. </p> </p> );
+    setRebelIsOpen(!rebelIsOpen)
+    setShowText( rebelIsOpen ? "*passe o cursor do mouse no card para ler*" : //Validação abaixo para mostrar o Easter Egg
+      <div>
+      <span className={"font-bold text-3xl text-red-700 mb-6"}>Aliança Rebelde. </span>
+      <p>A Aliança Rebelde luta bravamente contra o mal do Império Galáctico, sem nunca desanimar apesar de alguns reveses esmagadores. Formada a partir dos movimentos de resistência que surgem durante as Guerras Clônicas, a Rebelião trabalha em segredo por décadas para derrubar o Imperador e restaurar a democracia na galáxia.</p>
+      <p className={"mt-4 text-white"}>Voce encontrou um Easter Egg. </p>
+    </div> ) //
   }
-
   return(
     <div id={"Conhecimentos"} className="ConhecimentosContainer">
       <div className={"ConhecimentosContent"}>
@@ -35,78 +44,27 @@ const Conhecimentos = (props) => {
           <p className={"Info"}>{ShowText}</p>
         </div>
         <div className={"ConhecimentosCards"}>
-          <div className={"ContainerCards"} >
-            <div className={"SpanBox "}>
-              <span>HTML</span>
-            </div>
-            <div onMouseEnter={() => setShowText("HTML é uma linguagem baseada em marcação, onde marcamos os elementos para definir quais informações a página vai exibir.")}
-                 onMouseLeave={() => setShowText("*passe o cursor do mouse no card para ler*")}>
-              <IconCard SVG={<FaHtml5 className={"Icon"}/> }/>
-            </div>
-          </div>
-
-          <div className={"ContainerCards"}>
-            <div className={"SpanBox "}>
-              <span>CSS3</span>
-            </div>
-            <div onMouseEnter={() => setShowText("CSS é uma linguagem de folha de estilo composta por “camadas”, criado com o propósito de estilizar as páginas HTML.")}
-                 onMouseLeave={() => setShowText("*passe o cursor do mouse no card para ler*")}>
-              <IconCard SVG={<FaCss3Alt className={"Icon"}/> }/>
-            </div>
-          </div>
-
-          <div className={"ContainerCards"}>
-            <div className={"SpanBox "}>
-              <span>React</span>
-            </div>
-            <div onMouseEnter={() => setShowText("ReactJS é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.")}
-                 onMouseLeave={() => setShowText("*passe o cursor do mouse no card para ler*")}>
-              <IconCard SVG={<FaReact className={"Icon"}/> }/>
-            </div>
-          </div>
-
-          <div className={"ContainerCards"}>
-            <div className={"SpanBox "}>
-              <span>JavaScript</span>
-            </div>
-            <div onMouseEnter={() => setShowText("JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.")}
-                 onMouseLeave={() => setShowText("*passe o cursor do mouse no card para ler*")}>
-              <IconCard SVG={<FaJsSquare className={"Icon"}/> }/>
-            </div>
-          </div>
-
-          <div className={"ContainerCards"}>
-            <div onMouseEnter={() => setShowText("Tailwind CSS é um framework desenvolvido para maximizar o potencial do bom e velho CSS e levá-lo ainda mais longe.")}
-                 onMouseLeave={() => setShowText("*passe o cursor do mouse no card para ler*")}>
-              <IconCard SVG={<SiTailwindcss className={"Icon"}/> }/>
-            </div>
-            <div className={"SpanBox "}>
-              <span>Tailwind CSS</span>
-            </div>
-          </div>
-
-          <div className={"ContainerCards"}>
-            <div onMouseEnter={() => setShowText("Git é um sistema de controle de versão distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.")}
-                 onMouseLeave={() => setShowText("*passe o cursor do mouse no card para ler*")}>
-              <IconCard SVG={<FaGitAlt className={"Icon"}/> }/>
-            </div>
-            <div className={"SpanBox "}>
-              <span>GIT</span>
-            </div>
-          </div>
-
+          {languages.map((item , index) => {
+            return(
+              <ConhecimentosCard id={item.id}
+                                 langName={item.langName}
+                                 Icon={item.langIcon}
+                                 langDescription={item.langDescription}
+                                 setShowText={setShowText}
+              />
+            )
+          })}
           <button className={"BtnRebel"} onClick={ShowRebel } >
-            <div className={isOpen ? "SpanBoxRebel" : "IconRebelHidden"}>
+            <div className={rebelIsOpen ? "SpanBoxRebel" : "IconRebelHidden"}>
               <span>REBELIÃO</span>
             </div>
-            <IconCard
-                      SVG={<FaRebel className={isOpen ? "IconRebel" : "IconRebelHidden"}/> }/>
+            <div className={"IconBox"} >
+              <FaRebel className={rebelIsOpen ? "IconRebel" : "IconRebelHidden"}/>
+            </div>
           </button>
-
         </div>
       </div>
     </div>
   )
 };
-
 export default Conhecimentos;

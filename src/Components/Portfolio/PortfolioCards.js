@@ -4,20 +4,15 @@ import React from 'react';
 import Modal from 'react-modal';
 import {FaGithub} from "react-icons/fa";
 
-
-
-
 const PortfolioCards = (props) => {
 //Modal
   const [modalIsOpen, setIsOpen] = React.useState(false);
-
   function openModal() {
     setIsOpen(true);
   }
   function closeModal() {
     setIsOpen(false);
   }
-
 
   return (
     <div className="PortfolioCards-Container">
@@ -32,19 +27,14 @@ const PortfolioCards = (props) => {
           <a href={props.GitLink} target="_blank"><FaGithub className={"IconClass mt-4 ml-4"}/></a>
         </div>
       </div>
-
       {/* Modal */}
-
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         className={"ModalStyle"}
       >
-
         <iframe className="FrameClass" src={props.Site}/>
-
       </Modal>
-
     </div>
   )
 }

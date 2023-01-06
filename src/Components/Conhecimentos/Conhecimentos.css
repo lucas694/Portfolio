@@ -40,11 +40,6 @@
     ;
 }
 
-.ContainerCards{
-    @apply flex flex-col
-}
-
-
 .SpanBox{
     @apply w-[5.5em] flex items-center justify-center ml-3 text-white
     font-semibold text-lg text-[#B0ADAD] absolute hidden

@@ -13,13 +13,11 @@ const container = {
     }
   }
 }
-
 const item = {
   hidden: { opacity: 0 },
   show: { opacity: 1 }
 }
 // animação de Reload da página
-
 const Estudos = () => {
   return (
     <motion.div className="EstudosContainer"
@@ -37,7 +35,6 @@ const Estudos = () => {
         <EstudosCard IconEstudos={IconDes} Tittle1={"Front End"}
                      Tittle2={"Desenvolvimento Web"} CardText={"Estudando tecnologias relacionadas a Desenvolvimento Web."}/>
       </motion.div>
-
     </motion.div>
   )
 }

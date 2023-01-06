@@ -1,6 +1,5 @@
 import "./EstudosCard.css"
 
-
 const EstudosCard = (props) => {
   return (
     <div className="EstudosCard">

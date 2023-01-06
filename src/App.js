@@ -7,11 +7,6 @@ import Estudos from "./Components/Estudos/Estudos";
 import Footer from "./Components/Footer";
 import Conhecimentos from "./Components/Conhecimentos/Conhecimentos";
 
-
-
-
-
-
 function App() {
   return (
     <div className="App">
@@ -24,6 +19,5 @@ function App() {
         <Footer />
     </div>
   );
-}
-
+};
 export default App;

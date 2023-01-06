@@ -2,9 +2,9 @@
     @apply flex flex-col justify-center items-center w-[100%] h-[100%];
 }
 
-
-.SobreMimContent{ @apply text-white w-[80%] h-[40%] flex justify-center items-center space-x-[10%] flex-wrap
-    sm:flex sm:flex-row sm:justify-center sm:items-center sm:w-[90%] sm:h-[80%] sm:space-x-7 sm:space-y-10 sm:mt-5;
+.SobreMimContent{
+    @apply text-white w-[80%] h-[40%] flex justify-center items-center space-x-[10%] flex-wrap
+    sm:flex sm:flex-row sm:justify-center sm:items-center sm:w-[90%] sm:h-[80%] sm:space-x-7 sm:space-y-10 sm:mt-5
 
 }
 
@@ -44,6 +44,13 @@
 .AboutEmail:hover{
     @apply border-gray-400 ;
 }
+.languageSec{
+    @apply flex flex-row mt-4 flex-wrap justify-center space-x-2
+}
 
+.languageIcons{
+    @apply w-[45px] h-[35px] mt-2
+    sm:w-[50px] sm:h-[40px]
+}
 
 
