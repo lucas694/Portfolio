@@ -2,7 +2,7 @@ import "./PortfolioCards.css"
 import {motion} from "framer-motion";
 import React from 'react';
 import Modal from 'react-modal';
-import {FaGithub} from "react-icons/fa";
+import {FaGithub, FaRegEye} from "react-icons/fa";
 
 const PortfolioCards = (props) => {
 //Modal
@@ -25,6 +25,7 @@ const PortfolioCards = (props) => {
         <div className={"CardBtnSec"}>
           <motion.button whileTap={{ scale: 0.8 }} className={"Card-Button"} onClick={openModal}> Veja Demo </motion.button>
           <a href={props.GitLink} target="_blank"><FaGithub className={"IconClass mt-4 ml-4"}/></a>
+          <a href={props.Link} target="_blank"><FaRegEye className={"IconClass mt-4 ml-4"}/></a>
         </div>
       </div>
       {/* Modal */}

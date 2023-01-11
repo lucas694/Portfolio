@@ -60,7 +60,12 @@ const Portfolio = () => {
       </motion.div>
       <motion.div variants={item} className="PortfolioCardsContainer">
         {Projetos.map((item)=>
-          <PortfolioCards key={item.id} CardDesc={item.tittle} CardImage={item.img} Site={item.link} GitLink={item.GitLink}/>
+          <PortfolioCards key={item.id}
+                          CardDesc={item.tittle}
+                          CardImage={item.img}
+                          Site={item.link}
+                          GitLink={item.GitLink}
+                          Link={item.link}/>
         )}
       </motion.div>
 
