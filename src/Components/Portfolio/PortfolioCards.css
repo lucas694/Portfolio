@@ -34,7 +34,7 @@
 
 .ModalStyle{
     @apply flex flex-col justify-center bg-white w-[95%] h-[90%] rounded-2xl
-    mt-[3em] ml-auto mr-auto;
+    mt-[3em] ml-auto mr-auto
 }
 
 .FrameClass{
