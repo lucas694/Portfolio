@@ -1,30 +1,7 @@
-.NavMobileIcon{
-    @apply h-[30px] w-[30px] cursor-pointer
-    sm:hidden
-}
-
-.NavbarMobile{
-    @apply flex flex-col items-center justify-center text-white backdrop-blur-sm
-    w-[100%] rounded-xl mt-24 fixed right-0 ;
-}
-.NavbarMobile a{
-     @apply w-full py-1 px-1 rounded-md text-gray-300
-}
-.NavbarMobile a:hover{
-    @apply bg-[#ccc] text-black text-xl
-}
-.NavOpen{
-    @apply flex
-    sm:hidden
-}
-.NavClose{
-    @apply hidden
-}
-
 .HeaderContent{
-    @apply w-full h-24 flex flex-row justify-between fixed px-10
+    @apply w-full h-24 hidden flex-row justify-between fixed px-10
     text-white flex-wrap
-    lg:px-20 sm:px-4 md:px-10
+    lg:px-20 sm:px-4 md:px-10 md:flex
 }
 
 .HeaderLogo{

@@ -1,0 +1,51 @@
+.MobileHeaderContainer{
+    @apply flex flex-row justify-between text-white z-50 fixed top-0 w-full
+}
+.MobileHeaderContent{
+    @apply flex flex-row justify-between px-4 items-center py-4 w-full
+    md:hidden
+}
+.MobileHeaderIconOpen{
+    @apply w-7 h-7
+}
+
+
+.MobileMenuContainer{
+    @apply flex flex-row items-center py-4  w-full rounded-b-3xl
+    md:hidden
+    border-b-2 border-white
+}
+
+.UlMobile{
+    @apply flex flex-row justify-around items-center w-full
+    sm:justify-center
+
+}
+.LiMobile{
+    @apply text-xs px-3 py-1 rounded-full font-semibold uppercase
+    flex flex-row justify-center items-center
+    sm:px-6 sm:py-2 sm:mx-2 sm:text-xs
+    transition-all duration-500 ease-in-out hover:text-white
+
+
+}
+
+.IconMobileNav{
+    @apply w-7 h-7 text-white mr-1
+    sm:w-8 sm:h-8
+}
+/*BotaoClose*/
+.BtnCloseMobile{
+    @apply absolute top-5 right-2 w-7 h-7 cursor-pointer bg-white rounded-full
+    flex justify-center items-center
+    transition-all duration-300 ease-in-out transform hover:scale-110
+    sm:-top-4 sm:right-4 sm:w-9 sm:h-9
+}
+.MobileHeaderIconClose{
+    @apply  fill-red-400 cursor-pointer  w-5 h-5 rounded-full
+    sm:w-7 sm:h-7
+    transition-all duration-300 ease-in-out
+ }
+.BtnCloseMobile:hover .MobileHeaderIconClose{
+    @apply fill-red-500 rotate-180 scale-125
+}

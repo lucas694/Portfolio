@@ -1,7 +1,6 @@
 import "./Header.css"
 import Dath from "../assets/img/darth.png";
 import { motion, useTime, useTransform } from "framer-motion";
-import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 
 {/*Nav Mobile Animação*/}
@@ -24,9 +23,6 @@ const Header = ()=>{
           <motion.h1 style={{ rotate }}>Lucas</motion.h1>
         </div>
         <div className="HeaderMenu">
-          <button onClick={OpenNav}>
-            <FaBars className={"NavMobileIcon"}/>
-          </button>
             <ul>
               <li><a href="#Inicio">Inicio</a></li>
               <li><a href="#SobreMim">Sobre Mim</a></li>
@@ -34,15 +30,6 @@ const Header = ()=>{
               <li><a href="#Conhecimentos">Conhecimentos</a></li>
             </ul>
         </div>
-        {/*Nav Mobile */}
-        <motion.div className={`NavbarMobile ${isOpen ? "NavOpen" : "NavClose"}`}
-                    animate={isOpen ? "open" : "closed"}
-                    variants={variants}>
-          <a href="#Inicio">Inicio</a>
-          <a href="#SobreMim">Sobre Mim</a>
-          <a href="#Projetos">Projetos</a>
-          <a href="#Conhecimentos">Conhecimentos</a>
-        </motion.div>
       </div>
   )
 }

@@ -33,10 +33,10 @@
 }
 
 .About{
-    @apply text-left mt-14 text-2xl text-[#B0ADAD];
+    @apply text-left mt-14 text-2xl text-[#B0ADAD] w-full
 }
 .AboutEmail{
-    @apply flex items-center w-full justify-center
+    @apply flex items-center w-[90%] justify-center
 }
 .MyEmail{
     @apply mt-10 text-white border-2 border-dashed border-[#B0ADAD] px-20 py-3 text-lg text-center rounded-[10px] cursor-pointer

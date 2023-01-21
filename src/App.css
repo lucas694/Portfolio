@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: space-between;
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 html {
