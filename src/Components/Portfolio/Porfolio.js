@@ -17,6 +17,7 @@ import Agency from  "../../assets/img/Portfolio/Agency.png"
 import Shoes from  "../../assets/img/Portfolio/Shoes.png"
 import { motion } from "framer-motion"
 import {useEffect, useState} from "react";
+import {Slide} from "react-awesome-reveal";
 
 
 const container = {
@@ -65,14 +66,16 @@ const Portfolio = () => {
         <h1 className={"LastProject"}>ULTIMOS PROJETOS</h1>
       </motion.div>
       <motion.div variants={item} className="PortfolioCardsContainer">
-        {AllProjects.slice(toggle ? 0 : 5).map((item)=>
-          <PortfolioCards key={item.id}
-                          CardDesc={item.tittle}
-                          CardImage={item.img}
-                          Site={item.link}
-                          GitLink={item.GitLink}
-                          Link={item.link}/>
-        )}
+        <Slide triggerOnce={true} direction={"up"} duration={800}>
+          {AllProjects.slice(toggle ? 0 : 5).map((item)=>
+            <PortfolioCards key={item.id}
+                            CardDesc={item.tittle}
+                            CardImage={item.img}
+                            Site={item.link}
+                            GitLink={item.GitLink}
+                            Link={item.link}/>
+          )}
+        </Slide>
       </motion.div>
       <div className={"hidden"}>
         <button className={"ButtonMore"}

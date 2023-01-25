@@ -1,5 +1,6 @@
 import "./SobreMim.css"
 import lucas from "../assets/img/me/lucas.jfif";
+import {Slide} from "react-awesome-reveal";
 
 //icons
 import HtmlIcon from "../assets/svg/html5-original.svg";
@@ -21,10 +22,7 @@ const container = {
     }
   }
 }
-const item = {
-  hidden: { opacity: 0 },
-  show: { opacity: 1 }
-}
+
 // animação de Reload da página
 
 const SobreMim = () => {
@@ -39,27 +37,31 @@ const SobreMim = () => {
     {id:8, icon: TailwindIcon, name: "Tailwind"},
   ]
   return (
-    <motion.div className="SobreMimContainer" id={"SobreMim"}
-                variants={container}
-                initial="hidden"
-                animate="show">
-
-      <motion.div variants={item}  className="SobreMimContent">
+    <div className="SobreMimContainer" id={"SobreMim"}>
+      <div  className="SobreMimContent">
         <div className="SobreMimLeft">
-          <p className={"Tittle-About"}>SOBRE MIM</p>
-          <h3 className={"Tittle-Apresentation"}>Olá, Me chamo Lucas e Sou um Desenvolvedor Jr.</h3>
+          <Slide direction="left" duration={700} triggerOnce={true}>
+            <p className={"Tittle-About"}>SOBRE MIM</p>
+            <h3 className={"Tittle-Apresentation"}>Olá, Me chamo Lucas e Sou um Desenvolvedor Jr.</h3>
+          </Slide>
           <div className={"About"}>
-            <p> Sou um apaixonado por tecnologia que decidiu trilhar o caminho da programação.
-            Possuo experiência em Desenvolvimento Web.</p>
-            <p className={"About mt-5"}>Atualmente estou estudando e me aperfeiçoando em ReactJS, JavaScript, TailWind, HTML, CSS, Bootstrap, Git , API e Redux. </p>
-            <div className={"languageSec"}>
-              {languagesIcons.map((item) =>(
-                <img src={item.icon} className={"languageIcons"} alt={item.name} />
-              ))}
+            <Slide direction="left" duration={800} triggerOnce={true} >
+              <p> Sou um apaixonado por tecnologia que decidiu trilhar o caminho da programação.
+              Possuo experiência em Desenvolvimento Web.</p>
+              <p className={"About mt-5"}>Atualmente estou estudando e me aperfeiçoando em ReactJS, JavaScript, TailWind, HTML, CSS, Bootstrap, Git , API e Redux. </p>
+            </Slide>
+              <div className={"languageSec"}>
+                <Slide direction="left" duration={400} triggerOnce={false} cascade={true}>
+                  {languagesIcons.map((item) =>(
+                    <img src={item.icon} className={"languageIcons"} alt={item.name} />
+                  ))}
+                </Slide>
             </div>
-            <div className="AboutEmail">
-              <a href="mailto:lucasassuncao694@gmail.com" className="MyEmail">lucasassuncao694@gmail.com</a>
-            </div>
+            <Slide direction="left" duration={800} triggerOnce={true}>
+              <div className="AboutEmail">
+                <a href="mailto:lucasassuncao694@gmail.com" className="MyEmail">lucasassuncao694@gmail.com</a>
+              </div>
+            </Slide>
           </div>
         </div>
 
@@ -73,10 +75,12 @@ const SobreMim = () => {
                       right: 50,
                       bottom: 50,
                     }}>       {/*Animações*/}
-          <img src={lucas} alt="Me" className={"MyPhoto"}/>
+          <Slide direction="right" duration={700} triggerOnce={false}>
+            <img src={lucas} alt="Me" className={"MyPhoto"}/>
+          </Slide>
         </motion.div>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 export default SobreMim ;

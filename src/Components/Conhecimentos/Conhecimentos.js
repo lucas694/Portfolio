@@ -1,6 +1,7 @@
 import "./Conhecimentos.css"
 import {useState} from "react";
 import ConhecimentosCard from "./ConhecimentosCard";
+import {Fade} from "react-awesome-reveal";
 
 // Import SVGs
 import { FaCss3Alt } from "react-icons/fa";
@@ -20,7 +21,7 @@ const Conhecimentos = (props) => {
     {id:4,langName:"JavaScript", langIcon:<FaJsSquare className={"Icon"}/>, langDescription:"JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.",},
     {id:5,langName:"GIT", langIcon:<FaGitAlt className={"Icon"}/>, langDescription:"Git é um sistema de controle de versão distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.",},
     {id:6,langName:"Tailwind CSS", langIcon:<SiTailwindcss className={"Icon"}/>, langDescription:"Tailwind CSS é um framework desenvolvido para maximizar o potencial do bom e velho CSS e levá-lo ainda mais longe.",},
-    {id:7,langName:"Redux Toolkit", langIcon:<SiRedux className={"Icon"}/>, langDescription:"Redux é uma biblioteca JavaScript de código aberto para gerenciar o estado do aplicativo. É comumente usado com bibliotecas como React ou Angular para criar interfaces de usuário.",},
+    {id:7,langName:"Redux ", langIcon:<SiRedux className={"Icon"}/>, langDescription:"Redux é uma biblioteca JavaScript de código aberto para gerenciar o estado do aplicativo. É comumente usado com bibliotecas como React ou Angular para criar interfaces de usuário.",},
   ]
 
   {/*easter egg*/}
@@ -40,20 +41,25 @@ const Conhecimentos = (props) => {
     <div id={"Conhecimentos"} className="ConhecimentosContainer">
       <div className={"ConhecimentosContent"}>
         <div className={"ConhecimentoInfo"}>
+          <Fade direction={"left"} triggerOnce={true} cascade={true}>
           <h1>Conhecimentos <span className={"text-blue-400"}>.</span></h1>
           <p className={"Info"}>{ShowText}</p>
+          </Fade>
         </div>
         <div className={"ConhecimentosCards"}>
-          {languages.map((item , index) => {
-            return(
-              <ConhecimentosCard id={item.id}
-                                 langName={item.langName}
-                                 Icon={item.langIcon}
-                                 langDescription={item.langDescription}
-                                 setShowText={setShowText}
-              />
-            )
-          })}
+          <div className={"ConhecimentosCardsContent"}>
+          <Fade direction={"right"} triggerOnce={false} cascade={true}>
+            {languages.map((item , index) => {
+              return(
+                <ConhecimentosCard id={item.id}
+                                   langName={item.langName}
+                                   Icon={item.langIcon}
+                                   langDescription={item.langDescription}
+                                   setShowText={setShowText}
+                />
+              )
+            })}
+          </Fade>
           <button className={"BtnRebel"} onClick={ShowRebel } >
             <div className={rebelIsOpen ? "SpanBoxRebel" : "IconRebelHidden"}>
               <span>REBELIÃO</span>
@@ -62,6 +68,7 @@ const Conhecimentos = (props) => {
               <FaRebel className={rebelIsOpen ? "IconRebel" : "IconRebelHidden"}/>
             </div>
           </button>
+        </div>
         </div>
       </div>
     </div>

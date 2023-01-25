@@ -1,5 +1,5 @@
 .HeaderContent{
-    @apply w-full h-24 hidden flex-row justify-between fixed px-10
+    @apply w-full h-24 hidden flex-row justify-between fixed px-10 z-10
     text-white flex-wrap
     lg:px-20 sm:px-4 md:px-10 md:flex
 }

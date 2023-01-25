@@ -1,5 +1,5 @@
 .MobileHeaderContainer{
-    @apply flex flex-row justify-between text-white z-0 fixed top-0 w-full
+    @apply flex flex-row justify-between text-white z-10 fixed top-0 w-full
 }
 .MobileHeaderContent{
     @apply flex flex-row justify-between px-4 items-center py-4 w-full
@@ -8,7 +8,6 @@
 .MobileHeaderIconOpen{
     @apply w-7 h-7
 }
-
 
 .MobileMenuContainer{
     @apply flex flex-row items-center py-4  w-full rounded-b-3xl

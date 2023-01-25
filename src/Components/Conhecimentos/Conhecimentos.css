@@ -1,21 +1,16 @@
 .ConhecimentosContainer{
-    @apply flex-col items-center justify-center mt-40 w-full flex
-    lg:flex lg:flex-row lg:items-center lg:justify-center lg:mt-40 lg:w-full
-    md:flex-col md:items-center md:justify-center md:mt-40 md:w-full
-    sm:flex-col sm:items-center sm:justify-center sm:mt-40 sm:w-full
+    @apply flex flex-col items-center justify-center mt-40 w-full
+    lg:flex-row
 }
 
 .ConhecimentosContent{
-    @apply  flex-col items-center justify-center w-[95%] space-x-0 flex
-    lg:flex lg:flex-row lg:w-[80%] lg:flex-wrap lg:justify-end lg:space-x-20 lg:items-start
-    md:flex-col md:items-center md:justify-center md:w-[80%] md:space-x-0
-    sm:flex-col sm:items-center sm:justify-center sm:w-[100%] sm:space-x-0
+    @apply  flex flex-col items-center justify-center w-full flex-wrap
+    lg:flex-row lg:items-start
 }
 
 .ConhecimentoInfo{
     @apply flex flex-col w-[95%] items-start flex-wrap justify-start
-    lg:w-[40%] lg:mt-10 lg:flex lg:flex-col lg:items-start lg:flex-wrap lg:justify-start
-    md:w-[80%]
+    lg:w-[40%] lg:mt-10
     sm:w-[80%]
 
 }
@@ -24,20 +19,21 @@
     @apply text-3xl font-bold text-[#fff] mt-2 ;
 }
 .Info{
-    @apply text-[#B0ADAD] mt-16 w-[95%]  flex items-start
+    @apply text-[#B0ADAD] mt-16 w-full h-auto flex items-start
     text-lg font-semibold text-start
-    lg:w-[80%] lg:relative lg:mt-7 lg:flex lg:items-start
-    md:w-[60%]
-    sm:absolute mt-16;
+    lg:mt-7
+    mt-16;
 }
 
 .ConhecimentosCards{
     @apply flex flex-row items-center justify-start flex-wrap w-[100%] mt-20
     2xl:w-[45em]
-    lg:flex lg:flex-row lg:items-center lg:justify-start lg:flex-wrap lg:w-[50%] lg:mt-0
+    lg:w-[50%] lg:mt-0
     md:w-[100%] md:mt-80
-    sm:w-[90%] sm:mt-64 sm:justify-start
-    ;
+    sm:w-[90%] sm:mt-64
+}
+.ConhecimentosCardsContent{
+    @apply flex flex-row flex-wrap w-full items-center justify-center
 }
 
 .SpanBox{

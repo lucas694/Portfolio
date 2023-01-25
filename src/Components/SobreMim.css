@@ -1,26 +1,30 @@
 .SobreMimContainer{
     @apply flex flex-col justify-center items-center w-[100%] h-[100%];
 }
-
 .SobreMimContent{
-    @apply text-white w-[80%] h-[40%] flex justify-center items-center space-x-[10%] flex-wrap
-    sm:flex sm:flex-row sm:justify-center sm:items-center sm:w-[90%] sm:h-[80%] sm:space-x-7 sm:space-y-10 sm:mt-5
+    @apply text-white w-full h-[40%] flex justify-center items-center flex-wrap px-6
+    xl:md:w-[80%]
+    md:w-[90%] md:px-0
+    sm:px-6
+
 
 }
 
 .SobreMimLeft{
-    @apply w-[35em] h-[70%] flex flex-col;
+    @apply w-full h-auto flex flex-col
+    lg:w-1/2
 }
 
 .SobreMimRight{
-    @apply w-[30em] h-[70%] flex flex-col flex items-center justify-center mt-10 ;
+    @apply w-full h-auto flex flex-col items-center justify-center mt-10 z-0
+    lg:w-1/2
 }
 
 .MyPhoto{
-    @apply
-    sm:w-[23em] sm:h-[23em] rounded-full border-white
+    @apply w-[20em] h-auto rounded-full border-white
+    sm:w-[23em]
     lg:ml-16
-    w-[20em] h-[19em] mr-8
+
 }
 
 .Tittle-About{
@@ -28,14 +32,15 @@
 }
 
 .Tittle-Apresentation{
-    @apply text-5xl text-left mt-14;
+    @apply text-5xl text-left mt-8
 }
 
 .About{
-    @apply text-left mt-14 text-2xl text-[#B0ADAD] w-full
+    @apply text-left mt-6 text-2xl text-[#B0ADAD] w-full
+    items-center justify-center flex flex-col
 }
 .AboutEmail{
-    @apply flex items-center w-[90%] justify-center
+    @apply flex items-center w-full justify-center
 }
 .MyEmail{
     @apply mt-10 text-white border-2 border-dashed border-[#B0ADAD] px-20 py-3 text-lg text-center rounded-[10px] cursor-pointer
