@@ -1,8 +1,9 @@
 .MobileHeaderContainer{
+    background-color:rgba(12, 11, 12, 0.46);
     @apply flex flex-row justify-between text-white z-10 fixed top-0 w-full
 }
 .MobileHeaderContent{
-    @apply flex flex-row justify-between px-4 items-center py-4 w-full
+    @apply flex flex-row justify-between px-4 items-center py-1 w-full
     md:hidden
 }
 .MobileHeaderIconOpen{

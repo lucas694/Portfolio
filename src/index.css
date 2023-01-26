@@ -9,4 +9,7 @@
     background-position: center;
 }
 
+.ReactModal__Overlay{
+    z-index: 20 ;
+}
 
