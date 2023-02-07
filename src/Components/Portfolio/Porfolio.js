@@ -15,6 +15,9 @@ import Login2 from  "../../assets/img/Portfolio/TeladeLogin2.png"
 import Pokedex from  "../../assets/img/Portfolio/Pokemon.png"
 import Agency from  "../../assets/img/Portfolio/Agency.png"
 import Shoes from  "../../assets/img/Portfolio/Shoes.png"
+import CoffeeStore from  "../../assets/img/Portfolio/coffestore.png"
+
+
 import { motion } from "framer-motion"
 import {useEffect, useState} from "react";
 import {Slide} from "react-awesome-reveal";
@@ -40,7 +43,7 @@ const item = {
 const Portfolio = () => {
   const[toggle, setToggle] = useState(true)
   const AllProjects =[
-    {id:1 , tittle:"Projeto Fast Food", img:fast, link:"https://delivery-orpin-sigma.vercel.app",GitLink:"https://github.com/lucas694/Delevery-Project-React"},
+    {id:1 , tittle:"Projeto Faculdade", img:fast, link:"https://delivery-orpin-sigma.vercel.app",GitLink:"https://github.com/lucas694/Delevery-Project-React"},
     {id:2 , tittle:"Tela de Login", img:Login, link:"https://login-screen-ten.vercel.app",GitLink:"https://github.com/lucas694/LoginScreen"},
     {id:3 , tittle:"Meu Portfolio", img:Porfolio, link:"https://portfolio-react-nine-sigma.vercel.app",GitLink:"https://github.com/lucas694/Portfolio"},
     {id:4 , tittle:"Rick and Morty API", img:RnM, link:"https://rick-and-morty-six-khaki.vercel.app",GitLink:"https://github.com/lucas694/Rick-and-Morty"},
@@ -49,11 +52,12 @@ const Portfolio = () => {
     {id:7 , tittle:"NFT Marketplace", img:NftMarket, link:"https://nft-marketplace-drab-six.vercel.app",GitLink:"https://github.com/lucas694/Nft-Marketplace"},
     {id:8 , tittle:"God of War Page", img:Gow, link:"https://gow-ruddy.vercel.app",GitLink:"https://github.com/lucas694/Gow"},
     {id:9 , tittle:"Valorant App", img:ValorantApp, link:"https://valorant-mobile.vercel.app",GitLink:"https://github.com/lucas694/ValorantMobile"},
-    {id:10 , tittle:"Tela de Login", img:Login2, link:"https://sign-in-sign-up-one.vercel.app/",GitLink:"https://github.com/lucas694/SignIn-SignUp"},
-    {id:11 , tittle:"Pokedex App", img:Pokedex, link:"https://pokedex-pied-six.vercel.app",GitLink:"https://github.com/lucas694/pokedex"},
-    {id:12 , tittle:"Agency Page", img:Agency, link:"https://agency-three-ivory.vercel.app",GitLink:"https://github.com/lucas694/Agency"},
-    {id:13 , tittle:"Shoes LaddingPage", img:Shoes, link:"https://ladding-shoes.vercel.app",GitLink:"https://github.com/lucas694/laddingShoes"},
-    {id:14 , tittle:"Comming Soon", img:CommingSoon, link:"https://commig-soon-page.vercel.app",GitLink:"https://github.com/lucas694/CommigSoonPage"},
+    {id:10 , tittle:"Coffee Store", img:CoffeeStore, link:"https://coffee-store-phi.vercel.app",GitLink:"https://github.com/lucas694/CoffeeStore"},
+    {id:11 , tittle:"Tela de Login", img:Login2, link:"https://sign-in-sign-up-one.vercel.app/",GitLink:"https://github.com/lucas694/SignIn-SignUp"},
+    {id:12 , tittle:"Pokedex App", img:Pokedex, link:"https://pokedex-pied-six.vercel.app",GitLink:"https://github.com/lucas694/pokedex"},
+    {id:13 , tittle:"Agency Page", img:Agency, link:"https://agency-three-ivory.vercel.app",GitLink:"https://github.com/lucas694/Agency"},
+    {id:14 , tittle:"Shoes LaddingPage", img:Shoes, link:"https://ladding-shoes.vercel.app",GitLink:"https://github.com/lucas694/laddingShoes"},
+    {id:15 , tittle:"Comming Soon", img:CommingSoon, link:"https://commig-soon-page.vercel.app",GitLink:"https://github.com/lucas694/CommigSoonPage"},
   ]
   return (
     <motion.div className="PortfolioContainer" id={"Projetos"}
