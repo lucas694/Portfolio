@@ -20,10 +20,13 @@
     lg:w-1/2
 }
 
+
 .MyPhoto{
-    @apply w-[20em] h-auto rounded-full border-white
-    sm:w-[23em]
+    animation: morph 3.5s linear infinite;
+    @apply w-[20em] h-auto rounded-full object-cover object-center
+    sm:w-[23em] sm:h-[23em]
     lg:ml-16
+
 
 }
 
@@ -57,4 +60,21 @@
     sm:w-[50px] sm:h-[40px]
 }
 
-
+@keyframes morph {
+    0%,
+    100% {
+        border-radius:
+        40% 60% 70% 30% /
+        40% 40% 60% 50%;
+    }
+    34%{
+        border-radius:
+        70% 30% 50% 50% /
+        30% 30% 70% 70%;
+    }
+    67%{
+        border-radius:
+        100% 60% 60% 100% /
+        100% 100% 60% 60%;
+    }
+}

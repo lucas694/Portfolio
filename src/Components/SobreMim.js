@@ -66,7 +66,6 @@ const SobreMim = () => {
         </div>
 
         <motion.div className="SobreMimRight"
-                    whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     drag
                     dragConstraints={{
