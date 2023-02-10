@@ -53,10 +53,10 @@ const Portfolio = () => {
     {id:8 , tittle:"God of War Page", img:Gow, link:"https://gow-ruddy.vercel.app",GitLink:"https://github.com/lucas694/Gow"},
     {id:9 , tittle:"Valorant App", img:ValorantApp, link:"https://valorant-mobile.vercel.app",GitLink:"https://github.com/lucas694/ValorantMobile"},
     {id:10 , tittle:"Coffee Store", img:CoffeeStore, link:"https://coffee-store-phi.vercel.app",GitLink:"https://github.com/lucas694/CoffeeStore"},
-    {id:11 , tittle:"Tela de Login", img:Login2, link:"https://sign-in-sign-up-one.vercel.app/",GitLink:"https://github.com/lucas694/SignIn-SignUp"},
-    {id:12 , tittle:"Pokedex App", img:Pokedex, link:"https://pokedex-pied-six.vercel.app",GitLink:"https://github.com/lucas694/pokedex"},
-    {id:13 , tittle:"Agency Page", img:Agency, link:"https://agency-three-ivory.vercel.app",GitLink:"https://github.com/lucas694/Agency"},
-    {id:14 , tittle:"Shoes LaddingPage", img:Shoes, link:"https://ladding-shoes.vercel.app",GitLink:"https://github.com/lucas694/laddingShoes"},
+    {id:11 , tittle:"Shoes LaddingPage", img:Shoes, link:"https://ladding-shoes.vercel.app",GitLink:"https://github.com/lucas694/laddingShoes"},
+    {id:12 , tittle:"Tela de Login", img:Login2, link:"https://sign-in-sign-up-one.vercel.app/",GitLink:"https://github.com/lucas694/SignIn-SignUp"},
+    {id:13 , tittle:"Pokedex App", img:Pokedex, link:"https://pokedex-pied-six.vercel.app",GitLink:"https://github.com/lucas694/pokedex"},
+    {id:14 , tittle:"Agency Page", img:Agency, link:"https://agency-three-ivory.vercel.app",GitLink:"https://github.com/lucas694/Agency"},
     {id:15 , tittle:"Comming Soon", img:CommingSoon, link:"https://commig-soon-page.vercel.app",GitLink:"https://github.com/lucas694/CommigSoonPage"},
   ]
   return (
