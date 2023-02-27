@@ -16,6 +16,7 @@ import Pokedex from  "../../assets/img/Portfolio/Pokemon.png"
 import Agency from  "../../assets/img/Portfolio/Agency.png"
 import Shoes from  "../../assets/img/Portfolio/Shoes.png"
 import CoffeeStore from  "../../assets/img/Portfolio/coffestore.png"
+import Agriculture from  "../../assets/img/Portfolio/Agriculture.png"
 
 
 import { motion } from "framer-motion"
@@ -57,7 +58,8 @@ const Portfolio = () => {
     {id:12 , tittle:"Tela de Login", img:Login2, link:"https://sign-in-sign-up-one.vercel.app/",GitLink:"https://github.com/lucas694/SignIn-SignUp"},
     {id:13 , tittle:"Pokedex App", img:Pokedex, link:"https://pokedex-pied-six.vercel.app",GitLink:"https://github.com/lucas694/pokedex"},
     {id:14 , tittle:"Agency Page", img:Agency, link:"https://agency-three-ivory.vercel.app",GitLink:"https://github.com/lucas694/Agency"},
-    {id:15 , tittle:"Comming Soon", img:CommingSoon, link:"https://commig-soon-page.vercel.app",GitLink:"https://github.com/lucas694/CommigSoonPage"},
+    {id:15 , tittle:"Agriculture Page", img:Agriculture, link:"https://agriculture-store.vercel.app",GitLink:"https://github.com/lucas694/AgricultureStore"},
+    {id:16 , tittle:"Comming Soon", img:CommingSoon, link:"https://commig-soon-page.vercel.app",GitLink:"https://github.com/lucas694/CommigSoonPage"},
   ]
   return (
     <motion.div className="PortfolioContainer" id={"Projetos"}
