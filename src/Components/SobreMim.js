@@ -42,13 +42,14 @@ const SobreMim = () => {
         <div className="SobreMimLeft">
           <Slide direction="left" duration={700} triggerOnce={true}>
             <p className={"Tittle-About"}>SOBRE MIM</p>
-            <h3 className={"Tittle-Apresentation"}>Olá, Me chamo Lucas e Sou um Desenvolvedor Jr.</h3>
+            <h1 className={"TittlePresentation"}>Olá, Me chamo Lucas </h1>
+            <h2 className={"TittlePresentation"}>Sou um Desenvolvedor Jr.</h2>
           </Slide>
           <div className={"About"}>
-            <Slide direction="left" duration={800} triggerOnce={true} >
-              <p> Sou um apaixonado por tecnologia que decidiu trilhar o caminho da programação.
+            <Slide direction="left" duration={800} triggerOnce={true} className={"flex items-start w-full"}>
+              <p className={"AboutText"}> Sou um apaixonado por tecnologia que decidiu trilhar o caminho da programação.
               Possuo experiência em Desenvolvimento Web.</p>
-              <p className={"About mt-5"}>Atualmente estou estudando e me aperfeiçoando em ReactJS, JavaScript, TailWind, HTML, CSS, Bootstrap, Git , API e Redux. </p>
+              <p className={"AboutText"}>Atualmente estou estudando e me aperfeiçoando. </p>
             </Slide>
               <div className={"languageSec"}>
                 <Slide direction="left" duration={400} triggerOnce={false} cascade={true}>

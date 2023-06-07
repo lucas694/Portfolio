@@ -39,7 +39,7 @@ const Portfolio = () => {
       </motion.div>
       <motion.div variants={item} className="PortfolioCardsContainer">
         <Slide triggerOnce={true} direction={"up"} duration={800}>
-          {AllProjects.slice(toggle ? 0 : 5).map((item)=>
+          {AllProjects.slice(toggle ? 4 : 0).map((item)=>
             <PortfolioCards key={item.id}
                             CardDesc={item.tittle}
                             CardImage={item.img}
@@ -49,12 +49,10 @@ const Portfolio = () => {
           )}
         </Slide>
       </motion.div>
-      <div className={"hidden"}>
         <button className={"ButtonMore"}
                 onClick={()=>setToggle(!toggle)}
-        >{toggle ? "Ver Menos" : "Ver Mais"}
+        >{toggle ? "See old Projects" : "Hide old Projects"}
         </button>
-      </div>
     </motion.div>
   )
 }

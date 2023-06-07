@@ -24,10 +24,10 @@ const Header = ()=>{
         </div>
         <div className="HeaderMenu">
             <ul>
-              <li><a href="#Inicio">Inicio</a></li>
-              <li><a href="#SobreMim">Sobre Mim</a></li>
-              <li><a href="#Projetos">Projetos</a></li>
-              <li><a href="#Conhecimentos">Conhecimentos</a></li>
+              <li className={"HeaderLink"}><a href="#Inicio">Inicio</a></li>
+              <li className={"HeaderLink"}><a href="#SobreMim">Sobre Mim</a></li>
+              <li className={"HeaderLink"}><a href="#Projetos">Projetos</a></li>
+              <li className={"HeaderLink"}><a href="#Conhecimentos">Conhecimentos</a></li>
             </ul>
         </div>
       </div>

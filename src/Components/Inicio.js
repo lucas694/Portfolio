@@ -25,7 +25,7 @@ const Inicio = () => {
       }}>
         {/* Animação Inicial */}
         <div className="">
-          <h1 className={"ApresText"}>Eu sou o Lucas</h1>
+          <h1 className={"ApresText"}>Lucas Cardoso</h1>
           <p className={"ApresText-2"}>Desenvolvedor Front End Jr - UI DESIGN</p>
         </div>
 
@@ -33,7 +33,7 @@ const Inicio = () => {
         <div className="InicioIcons">
           <a href={"https://github.com/lucas694"} target="_blank"><FaGithub className={"IconClass"}/></a>
           <a href={"https://www.instagram.com/luccas_cardoso_/"} target="_blank"><FaInstagram className={"IconClass"} /></a>
-          <a href={"https://www.linkedin.com/in/lucascardoso-assuncao/"} target="_blank"><FaLinkedinIn className={"IconClassLinkdin"}/></a>
+          <a href={"https://www.linkedin.com/in/lucascardoso-assuncao/"} target="_blank"><FaLinkedinIn className={"IconClass"}/></a>
         </div>
       </motion.div>
     </div>

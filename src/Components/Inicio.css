@@ -1,30 +1,32 @@
 .InicioContainer{
-    @apply h-[85vh] w-[100%] flex flex-col justify-center items-center
+    @apply h-[65vh] w-[100%] flex flex-col justify-center items-center
+    md:h-[85vh]
 }
 
 .InicioCenter{
-    @apply sm:bg-transparent sm:w-[90%] sm:h-[50%] sm:text-white sm:mt-80
-    bg-transparent w-[90%] h-[50%] text-white mt-40
+    @apply bg-transparent w-[90%] h-[50%] text-white mt-40
+    md:mt-80
+
 }
 
 .ApresText{
     font-family: sans-serif;
-    @apply sm:text-8xl sm:text-center sm:font-medium
-    text-7xl text-center font-medium
+    @apply text-5xl text-center font-medium
+    sm:text-7xl
+    md:text-8xl
 }
 
 .ApresText-2{
-    @apply text-2xl text-center font-semibold mt-11
+    @apply text-xl text-center font-semibold mt-7
+    sm:text-2xl
 }
 .InicioIcons{
-    @apply flex justify-center items-center mt-10 space-x-7
+    @apply flex justify-center items-center mt-7 space-x-7
 }
 
 .IconClass{
-    @apply h-[2.8em] w-[2.8em] rounded-[50px]
-}
-.IconClassLinkdin{
-    @apply h-[2.8em] w-[2.8em]
+    @apply h-[2.3em] w-[2.3em]
+    sm:h-[2.8em] sm:w-[2.8em]
 }
 
 .IconClass:hover, .IconClassLinkdin:hover{

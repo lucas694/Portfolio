@@ -24,8 +24,8 @@ const PortfolioCards = (props) => {
         <h1 className={"Card-Descricao"}> {props.CardDesc} </h1>
         <div className={"CardBtnSec"}>
           <motion.button whileTap={{ scale: 0.8 }} className={"Card-Button"} onClick={openModal}> Veja Demo </motion.button>
-          <a href={props.GitLink} target="_blank"><FaGithub className={"IconClass mt-4 ml-4"}/></a>
-          <a href={props.Link} target="_blank"><FaRegEye className={"IconClass mt-4 ml-4"}/></a>
+          <a href={props.GitLink} target="_blank"><FaGithub className={"IconClassCard"}/></a>
+          <a href={props.Link} target="_blank"><FaRegEye className={"IconClassCard"}/></a>
         </div>
       </div>
       {/* Modal */}

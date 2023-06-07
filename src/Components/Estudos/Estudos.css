@@ -1,14 +1,11 @@
 .EstudosContainer{
-    @apply flex justify-center flex-col items-center;
+    @apply flex justify-center flex-col items-center w-full
 }
 
 .EstudosContent{
-    @apply
-    lg:flex lg:flex-row lg:items-center lg:justify-center lg:w-[40%] lg:h-[10em] lg:rounded-2xl lg:space-x-7 lg:space-y-0 lg:mt-5
-    md:flex-col md:space-x-0 md:w-[22em] md:h-[20em]  md:space-y-7 md:mt-5
-    sm:flex-col sm:space-x-0 sm:w-[24em] sm:h-[20em]  sm:space-y-7 sm:mt-5
-    flex-col space-x-0 w-[24em] h-[20em]  space-y-7 mt-5
-
+    @apply flex flex-col space-x-0 w-full space-y-7 mt-5 items-center justify-center px-6
+    md:flex-row md:w-[90%] md:space-x-7 md:space-y-0  md:px-0
+    xl:w-[50%]
 }
 
 .EstudosTittle{

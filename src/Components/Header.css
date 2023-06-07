@@ -13,19 +13,35 @@
 }
 
 .HeaderMenu{
-    @apply h-full flex flex-row h-full items-center
+    @apply flex flex-row h-full items-center
 }
 
 ul{
     @apply flex-row hidden
      sm:flex
-
-}
-li{
-    @apply text-lg px-4 py-1 rounded-md
-
 }
 
-li:hover{
-    @apply text-gray-300 bg-[#ccc] text-black
+
+.HeaderLink{
+    display: inline-block;
+    position: relative;
+    transition: border-color 0.5s ease-out; /* animação da borda de transição de cor */;
+    @apply px-4 py-2 text-lg text-[#FFFFFF] font-semibold
+}
+
+.HeaderLink::before  {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 1rem;
+    background: linear-gradient(to right, #4C70EF, #FFFFFF);
+    transform: scaleX(0);
+    transition: transform 0.5s ease-out;
+}
+.HeaderLink:hover::before{
+    transform: scaleX(0.7);
+    background: linear-gradient(to right, #4C70EF, #FFFFFF);
 }

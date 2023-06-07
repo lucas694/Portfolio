@@ -1,22 +1,23 @@
-.EstudosCard{
-    @apply flex flex-wrap bg-[#292C36] h-[9em] rounded-2xl
+.EstudosCardContainer{
+    @apply flex flex-row bg-[#292C36] rounded-2xl w-full max-w-[20em] p-4 h-auto
+    md:min-h-[8em]
+    xl:max-w-max
 }
 
 .IconDiv{
-    @apply w-[3.5em] h-[3.5em] bg-[#38405A] rounded-[5px] flex items-center justify-center mt-5 ml-7;
+    @apply w-[4.1em] h-[3.1em] p-2 bg-[#38405A] rounded-[5px] flex items-center justify-center
 }
-.EstudosCardTittleDiv{
-    @apply ml-5 mt-4 flex flex-col justify-start items-start;
+.EstudosCardContent{
+    @apply flex flex-col justify-start items-start ml-4 w-full
 }
 
 .EstudosCardTittle{
-    @apply text-white text-xl font-semibold tracking-[1px] ;
+    @apply text-white text-base font-semibold text-left
+    xl:text-lg
 }
 
-.EstudosCardTextDiv{
-    @apply ml-7 w-[20em] h-[2em] flex justify-start;
-}
 
 .EstudosCardText{
-    @apply text-[#B0ADAD] text-sm font-semibold tracking-[1px] pb-8 ;
+    @apply text-[#B0ADAD] text-xs font-semibold tracking-[1px]  text-left mt-1
+
 }
