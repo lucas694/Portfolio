@@ -1,5 +1,6 @@
 .SobreMimContainer{
-    @apply flex flex-col justify-center items-center w-[100%] ;
+    @apply flex flex-col justify-center items-center w-[100%] py-10
+    md:py-20
 }
 .SobreMimContent{
     @apply text-white w-full  flex justify-center items-center flex-wrap px-6

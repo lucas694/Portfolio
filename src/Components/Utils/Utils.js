@@ -15,6 +15,7 @@ import DigitalMarketing from "../../assets/img/Portfolio/DigitalMarketing.png";
 import Fitness from "../../assets/img/Portfolio/Fitness.png";
 import Portlight from "../../assets/img/Portfolio/Portlight.png";
 import CommingSoon from "../../assets/img/Portfolio/Comming-Soon.png";
+import Burger from "../../assets/img/Portfolio/Burger.png";
 
 const AllProjects =[
   {id:1 , tittle:"Projeto Faculdade", img:fast, link:"https://delivery-orpin-sigma.vercel.app",GitLink:"https://github.com/lucas694/Delevery-Project-React"},
@@ -28,12 +29,13 @@ const AllProjects =[
   {id:9 , tittle:"Shoes LaddingPage", img:Shoes, link:"https://ladding-shoes.vercel.app",GitLink:"https://github.com/lucas694/laddingShoes"},
   {id:10 , tittle:"Tela de Login", img:Login2, link:"https://sign-in-sign-up-one.vercel.app/",GitLink:"https://github.com/lucas694/SignIn-SignUp"},
   {id:11 , tittle:"Pokedex App", img:Pokedex, link:"https://pokedex-pied-six.vercel.app",GitLink:"https://github.com/lucas694/pokedex"},
-  {id:12 , tittle:"Agency Page", img:Agency, link:"https://agency-three-ivory.vercel.app",GitLink:"https://github.com/lucas694/Agency"},
-  {id:13 , tittle:"Agriculture Page", img:Agriculture, link:"https://agriculture-store.vercel.app",GitLink:"https://github.com/lucas694/AgricultureStore"},
-  {id:14 , tittle:"Digital Marketing", img:DigitalMarketing, link:"https://digital-marketing-seven.vercel.app",GitLink:"https://github.com/lucas694/digital-Marketing"},
-  {id:15 , tittle:"Fitness Gym", img:Fitness, link:"https://fitness-gym-theta.vercel.app",GitLink:"https://github.com/lucas694/FitnessGym"},
-  {id:16 , tittle:"Portlight", img:Portlight, link:"https://portlight.vercel.app",GitLink:"https://github.com/lucas694/Portlight"},
-  {id:17 , tittle:"Comming Soon", img:CommingSoon, link:"https://commig-soon-page.vercel.app",GitLink:"https://github.com/lucas694/CommigSoonPage"},
+  {id:12 , tittle:"Burger Bangor", img:Burger, link:"https://burger-bangor.vercel.app",GitLink:"https://github.com/lucas694/BurgerBangor"},
+  {id:13 , tittle:"Agency Page", img:Agency, link:"https://agency-three-ivory.vercel.app",GitLink:"https://github.com/lucas694/Agency"},
+  {id:14 , tittle:"Agriculture Page", img:Agriculture, link:"https://agriculture-store.vercel.app",GitLink:"https://github.com/lucas694/AgricultureStore"},
+  {id:15 , tittle:"Digital Marketing", img:DigitalMarketing, link:"https://digital-marketing-seven.vercel.app",GitLink:"https://github.com/lucas694/digital-Marketing"},
+  {id:16 , tittle:"Fitness Gym", img:Fitness, link:"https://fitness-gym-theta.vercel.app",GitLink:"https://github.com/lucas694/FitnessGym"},
+  {id:17 , tittle:"Portlight", img:Portlight, link:"https://portlight.vercel.app",GitLink:"https://github.com/lucas694/Portlight"},
+  {id:18 , tittle:"Comming Soon", img:CommingSoon, link:"https://commig-soon-page.vercel.app",GitLink:"https://github.com/lucas694/CommigSoonPage"},
 ]
 
 export function getProjects(){
