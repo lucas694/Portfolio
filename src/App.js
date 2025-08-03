@@ -4,9 +4,8 @@ import HeaderMobile from "./Components/MobileHeader";
 import Inicio from "./Components/Inicio";
 import SobreMim from "./Components/SobreMim";
 import Porfolio from "./Components/Portfolio/Porfolio";
-import Estudos from "./Components/Estudos/Estudos";
 import Footer from "./Components/Footer";
-import Conhecimentos from "./Components/Conhecimentos/Conhecimentos";
+import Conhecimentos from "./Components/Conhecimentos";
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
         <HeaderMobile />
         <Inicio />
         <SobreMim />
-        <Estudos />
         <Porfolio/>
         <Conhecimentos/>
         <Footer />

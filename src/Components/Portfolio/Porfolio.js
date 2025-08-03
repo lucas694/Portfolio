@@ -35,11 +35,10 @@ const Portfolio = () => {
 
       <motion.div variants={item} className="PortfolioText">
         <h1 className={"PortfolioTittle"}>PORTFOLIO</h1>
-        <h1 className={"LastProject"}>ULTIMOS PROJETOS</h1>
+        <h1 className={"LastProject"}>ALGUNS PROJETOS</h1>
       </motion.div>
       <motion.div variants={item} className="PortfolioCardsContainer">
-        <Slide triggerOnce={true} direction={"up"} duration={800}>
-          {AllProjects.slice(toggle ? 4 : 0).map((item)=>
+          {AllProjects.slice(0).map((item)=>
             <PortfolioCards key={item.id}
                             CardDesc={item.tittle}
                             CardImage={item.img}
@@ -47,12 +46,8 @@ const Portfolio = () => {
                             GitLink={item.GitLink}
                             Link={item.link}/>
           )}
-        </Slide>
       </motion.div>
-        <button className={"ButtonMore"}
-                onClick={()=>setToggle(!toggle)}
-        >{toggle ? "See old Projects" : "Hide old Projects"}
-        </button>
+        
     </motion.div>
   )
 }
