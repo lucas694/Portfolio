@@ -17,7 +17,8 @@ import Portlight from "../../assets/img/Portfolio/Portlight.png";
 //import CommingSoon from "../../assets/img/Portfolio/Comming-Soon.png";
 //import Burger from "../../assets/img/Portfolio/Burger.png";
 //import YourTrans from "../../assets/img/Portfolio/YourTrans.png";
-//import YourTrans2 from "../../assets/img/Portfolio/YourTrans2.png";
+import Shadient from "../../assets/img/Portfolio/Shadient.jpg";
+import LaddingPage from "../../assets/img/Portfolio/Ladding-page.png";
 
 const AllProjects =[
   //{id:1 , tittle:"Projeto Faculdade", img:fast, link:"https://delivery-orpin-sigma.vercel.app",GitLink:"https://github.com/lucas694/Delevery-Project-React"},
@@ -32,6 +33,8 @@ const AllProjects =[
   {id:15 , tittle:"Digital Marketing", img:DigitalMarketing, link:"https://digital-marketing-seven.vercel.app",GitLink:"https://github.com/lucas694/digital-Marketing"},
   {id:16 , tittle:"Fitness Gym", img:Fitness, link:"https://fitness-gym-theta.vercel.app",GitLink:"https://github.com/lucas694/FitnessGym"},
   {id:17 , tittle:"Portlight", img:Portlight, link:"https://portlight.vercel.app",GitLink:"https://github.com/lucas694/Portlight"},
+  {id:18 , tittle:"Shadient", img:Shadient, link:"https://shadient-ppzc.vercel.app",GitLink:"https://github.com/lucas694/Shadient"},
+  {id:19 , tittle:"Ladding Page", img:LaddingPage, link:"https://landing-page-ten-iota-86.vercel.app",GitLink:"https://github.com/lucas694/Landing-page"},
 ]
 
 export function getProjects(){
