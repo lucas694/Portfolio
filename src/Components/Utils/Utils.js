@@ -26,7 +26,7 @@ const AllProjects =[
   //{id:4 , tittle:"Banking Page", img:Banking, link:"https://bank-project-alpha.vercel.app",GitLink:"https://github.com/lucas694/Bank-Project"},
   {id:5 , tittle:"NFT Marketplace", img:NftMarket, link:"https://nft-marketplace-drab-six.vercel.app",GitLink:"https://github.com/lucas694/Nft-Marketplace"},
   //{id:7 , tittle:"Valorant App", img:ValorantApp, link:"https://valorant-mobile.vercel.app",GitLink:"https://github.com/lucas694/ValorantMobile"},
-  {id:10 , tittle:"Tela de Login", img:Login2, link:"https://sign-in-sign-up-one.vercel.app/",GitLink:"https://github.com/lucas694/SignIn-SignUp"},
+  //{id:10 , tittle:"Tela de Login", img:Login2, link:"https://sign-in-sign-up-one.vercel.app/",GitLink:"https://github.com/lucas694/SignIn-SignUp"},
   {id:11 , tittle:"Pokedex App", img:Pokedex, link:"https://pokedex-pied-six.vercel.app",GitLink:"https://github.com/lucas694/pokedex"},
   {id:13 , tittle:"Agency Page", img:Agency, link:"https://agency-three-ivory.vercel.app",GitLink:"https://github.com/lucas694/Agency"},
   //{id:14 , tittle:"Agriculture Page", img:Agriculture, link:"https://agriculture-store.vercel.app",GitLink:"https://github.com/lucas694/AgricultureStore"},
