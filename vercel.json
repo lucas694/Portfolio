@@ -38,12 +38,12 @@
   ],
   "functions": {
     "app/api/**/*.js": {
-      "runtime": "nodejs18.x"
+      "runtime": "nodejs22.x"
     }
   },
   "build": {
     "env": {
-      "NODE_VERSION": "18.x"
+      "NODE_VERSION": "22.x"
     }
   }
 }
